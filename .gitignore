@@ -1,0 +1,10 @@
+node_modules/
+.vercel/
+.env*
+!.env.example
+tmp/
+release/
+dist/
+playwright-report/
+test-results/
+supabase/.temp/
