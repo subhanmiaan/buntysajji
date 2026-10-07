@@ -4,6 +4,7 @@
   "private": true,
   "description": "Bunty Sajji restaurant ordering and admin system",
   "scripts": {
+    "build:vercel": "node scripts/build-vercel.mjs",
     "build": "node scripts/build.mjs",
     "start": "node server/index.mjs",
     "dev": "node --watch server/index.mjs",

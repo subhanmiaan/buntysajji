@@ -1,0 +1,10 @@
+.env*
+!.env.example
+tmp/
+release/
+test-results/
+playwright-report/
+node_modules/
+dist/
+public/
+.git/

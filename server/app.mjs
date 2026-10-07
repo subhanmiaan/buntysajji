@@ -55,6 +55,7 @@ export function createApp({services,env=process.env,publicDir=resolve('dist')}={
  app.get(['/admin','/admin/','/admin/orders','/admin/menu','/admin/categories','/admin/delivery-zones','/admin/settings'],async(req,res)=>{if(!services)return res.redirect('/admin/login');try{const session=await services.auth.verify(req.cookies.bs_access,req.cookies.bs_refresh);if(session.session)setSession(res,session.session);res.sendFile(resolve(publicDir,'admin.html'));}catch{return res.redirect('/admin/login');}});
  app.get(['/checkout','/checkout/','/order/:number'],(_req,res)=>{res.set('Cache-Control','no-store');res.sendFile(resolve(publicDir,'index.html'));});
  app.get('/admin.html',(_req,res)=>res.redirect('/admin'));
+ app.get(['/', '/menu', '/menu/', '/about', '/about/', '/gallery', '/gallery/'],(_req,res)=>res.sendFile(resolve(publicDir,'index.html')));
  app.use(express.static(publicDir,{dotfiles:'ignore',maxAge:0}));
  app.use((_req,res)=>res.status(404).sendFile(resolve(publicDir,'404.html')));
  app.use((error,_req,res,_next)=>{if(error.name==='ZodError')return res.status(400).json({error:error.issues.map(i=>`${i.path.join('.')}: ${i.message}`).join('; ')});if(error.code==='LIMIT_FILE_SIZE')return res.status(400).json({error:'Photo must be under 5 MB.'});if(error.type==='entity.parse.failed')return res.status(400).json({error:'Invalid JSON.'});if(!error.status)console.error('Request failed:',error.name,error.code||'');res.status(error.status||500).json({error:error.status?error.message:'Something went wrong. Please try again.'});});

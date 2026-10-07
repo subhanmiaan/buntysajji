@@ -1,1 +1,8 @@
-{"version":2,"outputDirectory":".","trailingSlash":true,"headers":[{"source":"/(.*)","headers":[{"key":"X-Content-Type-Options","value":"nosniff"},{"key":"Referrer-Policy","value":"strict-origin-when-cross-origin"}]}]}
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "express",
+  "buildCommand": "npm run build:vercel",
+  "functions": {
+    "server.mjs": { "includeFiles": "dist/**/*.html" }
+  }
+}

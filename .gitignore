@@ -5,6 +5,8 @@ node_modules/
 tmp/
 release/
 dist/
+public/
 playwright-report/
 test-results/
 supabase/.temp/
+.vercel
