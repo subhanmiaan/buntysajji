@@ -1,5 +1,4 @@
 import sharp from 'sharp';
-import fs from 'node:fs';
 
 async function processLogo() {
   const inputPath = 'C:/Users/MMP/.gemini/antigravity/brain/c4cc6aac-d6d8-4ee6-b445-f17622418c97/.user_uploaded/media_1791298564278.png';

@@ -3,7 +3,7 @@ import {execFileSync} from 'node:child_process';
 execFileSync(process.execPath,['scripts/build.mjs'],{stdio:'inherit'});
 const destination='release/server-app';
 mkdirSync(destination,{recursive:true});
-for(const file of ['package.json','package-lock.json','.env.example','README.md','LAUNCH.md','docs','server','dist','index.html','404.html','admin.html','app.js','menu-data.js','style.css','enhancements.css','punjabi-theme.css','system.css','assets','client','menu','about','gallery'])cpSync(file,`${destination}/${file}`,{recursive:true});
+for(const file of ['package.json','package-lock.json','.env.example','README.md','LAUNCH.md','docs','server','dist','index.html','404.html','admin.html','app.js','menu-data.js','style.css','enhancements.css','punjabi-theme.css','system.css','brand-refresh.css','order-desk.css','storefront.css','assets','client','menu','about','gallery'])cpSync(file,`${destination}/${file}`,{recursive:true});
 mkdirSync(`${destination}/scripts`,{recursive:true});
 for(const file of ['build.mjs','create-admin.mjs','generate-seed.mjs'])cpSync(`scripts/${file}`,`${destination}/scripts/${file}`);
 mkdirSync(`${destination}/supabase`,{recursive:true});

@@ -1,10 +1,12 @@
 # Launch the ordering system
 
-Admin, database persistence, menu/category management, delivery zones, settings, cash checkout and private tracking are implemented. The existing public theme is preserved. This is no longer a static-only website.
+Admin, database persistence, menu/category management, delivery zones, settings, cash checkout and private tracking are implemented. The public theme uses the restaurant's red-and-white branding.
 
 ## First login
 
-After configuring `.env`, run:
+The existing restaurant account is `buntysajjiadmin@buntysajji.com`. Open https://buntysajji.vercel.app/admin/login and use the password chosen for that account. Login opens the order desk directly. There is no default password.
+
+Only when setting up a new restaurant owner, configure `.env` and run:
 
 ```sh
 npm run admin:create -- your-email@example.com
@@ -20,7 +22,11 @@ Choose your password in the hidden terminal prompt, then open `/admin/login`. Th
 4. Train staff to watch `/admin/orders`, confirm orders and progress statuses. Mark Completed only after cash collection.
 5. Test a delivery and takeaway order with staff before announcing the service.
 
-## Hostinger deployment
+## Vercel deployment
+
+This project is linked to `buntysajji` on Vercel. Follow [VERCEL-SETUP.md](VERCEL-SETUP.md) for the Express build and environment configuration. The API and admin require this server deployment; uploading only static files will show the offline preview.
+
+## Alternative Node hosting
 
 Use hosting that runs a Node server, or a VPS. The previous static ZIP cannot run the backend.
 

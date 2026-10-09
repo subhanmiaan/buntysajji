@@ -182,7 +182,7 @@ async function fetchImageUrl(query) {
     });
     const data = await imgRes.json();
     return data.results ? data.results.slice(0, 6).map(r => r.image) : [];
-  } catch (err) {
+  } catch (_err) {
     return null;
   }
 }
@@ -202,7 +202,7 @@ async function downloadAndOptimize(urls, destPath) {
         .webp({ quality: 85 })
         .toFile(destPath);
       return true;
-    } catch (e) {
+    } catch (_e) {
       // try next url
     }
   }
@@ -215,7 +215,7 @@ async function main() {
   fs.mkdirSync(targetDir, { recursive: true });
 
   let successCount = 0;
-  let skippedCount = 0;
+  let _skippedCount = 0;
   let failed = [];
 
   for (let i = 0; i < items.length; i++) {

@@ -1,0 +1,368 @@
+[
+  {
+    "name": "Chicken Sajji",
+    "id": "0c7e857d-eaca-4013-a1d4-9a43a4401821",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-sajji.webp",
+    "previous_image_url": "/assets/food/sajji.webp"
+  },
+  {
+    "name": "Chicken Peri Peri Sajji",
+    "id": "54f34d51-798f-421e-a6f4-a9c201a04963",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-peri-peri-sajji.webp",
+    "previous_image_url": "/assets/food/sajji.webp"
+  },
+  {
+    "name": "Chicken Malai Sajji",
+    "id": "1fbd8762-cc08-458e-ac1e-3cf6ae57618f",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-malai-sajji.webp",
+    "previous_image_url": "/assets/food/sajji.webp"
+  },
+  {
+    "name": "Chicken Butter Sajji",
+    "id": "c45253d4-18e2-46d6-a74f-71142417f8b1",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-butter-sajji.webp",
+    "previous_image_url": "/assets/food/sajji.webp"
+  },
+  {
+    "name": "Chicken Black Pepper Sajji",
+    "id": "8a7d1bb1-31f8-44f6-a275-fddd1e14868b",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-black-pepper-sajji.webp",
+    "previous_image_url": "/assets/food/sajji.webp"
+  },
+  {
+    "name": "Chicken White Pepper Sajji",
+    "id": "9cee870f-7086-4968-aa75-793673326c08",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-white-pepper-sajji.webp",
+    "previous_image_url": "/assets/food/sajji.webp"
+  },
+  {
+    "name": "Chicken Cheese Sajji",
+    "id": "9e3bfcdc-9d1e-45a5-aafa-e889a97a0f17",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-cheese-sajji.webp",
+    "previous_image_url": "/assets/food/sajji.webp"
+  },
+  {
+    "name": "Chicken Sajji without Rice",
+    "id": "1e361c45-17c6-4f90-a77a-c179ae33c3a6",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-sajji-without-rice.webp",
+    "previous_image_url": "/assets/food/sajji.webp"
+  },
+  {
+    "name": "Grilled Chargha",
+    "id": "b591c39f-1f8f-4ff5-a394-1a9603ce7a41",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/grilled-chargha.webp",
+    "previous_image_url": "/assets/food/bbq.webp"
+  },
+  {
+    "name": "Pangasius Fish with Rice · 1 kg",
+    "id": "28a42e03-6473-4948-a915-1bf85666ffe7",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/pangasius-fish-with-rice-1-kg.webp",
+    "previous_image_url": "/assets/food/fish.webp"
+  },
+  {
+    "name": "Pangasius Fish Grilled · 1 kg",
+    "id": "05315144-c926-4a8e-ad6b-5a61d54deac2",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/pangasius-fish-grilled-1-kg.webp",
+    "previous_image_url": "/assets/food/fish.webp"
+  },
+  {
+    "name": "Pangasius Fish Tikka · 12 pieces",
+    "id": "92dc5c57-8fc4-4c2e-a070-d2d67b6b145b",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/pangasius-fish-tikka-12-pieces.webp",
+    "previous_image_url": "/assets/food/fish.webp"
+  },
+  {
+    "name": "Rahu Fish Grilled · 1 kg",
+    "id": "0ff57053-1087-491a-aafa-676c67cc9c52",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/rahu-fish-grilled-1-kg.webp",
+    "previous_image_url": "/assets/food/fish.webp"
+  },
+  {
+    "name": "Chicken Malai Boti",
+    "id": "3f53dfef-c79e-43ce-ac30-92736a899bbc",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-malai-boti.webp",
+    "previous_image_url": "/assets/food/bbq.webp"
+  },
+  {
+    "name": "Chicken Tikka Boti",
+    "id": "791a3c30-2acd-4ee1-a3f4-b8d5f6242fdc",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-tikka-boti.webp",
+    "previous_image_url": "/assets/food/bbq.webp"
+  },
+  {
+    "name": "Chicken Tikka Cheese Paratha Roll",
+    "id": "02c6998f-4959-4b7c-ac1e-25be8ad09242",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-tikka-cheese-paratha-roll.webp",
+    "previous_image_url": "/assets/food/roll.webp"
+  },
+  {
+    "name": "Pasha Boti",
+    "id": "b9cc2836-7432-4313-ad44-a51dbd74afbc",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/pasha-boti.webp",
+    "previous_image_url": "/assets/food/bbq.webp"
+  },
+  {
+    "name": "Chicken Chest Piece",
+    "id": "68703bd0-615d-4544-aa99-6c7103838409",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-chest-piece.webp",
+    "previous_image_url": "/assets/food/bbq.webp"
+  },
+  {
+    "name": "Chicken Leg Piece",
+    "id": "02f03a36-a8d5-4a12-a921-7c2d8f536fc0",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-leg-piece.webp",
+    "previous_image_url": "/assets/food/bbq.webp"
+  },
+  {
+    "name": "Chicken Malai Chest Piece",
+    "id": "db773d1e-5a47-445a-a7c3-d984ea91e8b2",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-malai-chest-piece.webp",
+    "previous_image_url": "/assets/food/bbq.webp"
+  },
+  {
+    "name": "Chicken Malai Leg Piece",
+    "id": "1771b03f-ea68-4b70-abaa-b520abaa0c55",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-malai-leg-piece.webp",
+    "previous_image_url": "/assets/food/bbq.webp"
+  },
+  {
+    "name": "Chicken Cheese & Malai Chest Piece",
+    "id": "a7800a01-7e7d-4458-a94d-50e9ba471141",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-cheese-and-malai-chest-piece.webp",
+    "previous_image_url": "/assets/food/bbq.webp"
+  },
+  {
+    "name": "Chicken Cheese & Malai Leg Piece",
+    "id": "b217dbbf-461a-4bf6-a17d-51c2f5872fc0",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-cheese-and-malai-leg-piece.webp",
+    "previous_image_url": "/assets/food/bbq.webp"
+  },
+  {
+    "name": "Chicken Kabab",
+    "id": "d2aab9d3-1991-4010-a75f-51b53e96cb9d",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-kabab.webp",
+    "previous_image_url": "/assets/food/kabab.webp"
+  },
+  {
+    "name": "Chicken Cheese Kabab",
+    "id": "75dc2729-1300-44dc-a2ed-afbe0827d8be",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-cheese-kabab.webp",
+    "previous_image_url": "/assets/food/kabab.webp"
+  },
+  {
+    "name": "Chicken Rashmi Kabab",
+    "id": "cade9fac-3f2b-4fcc-a48f-1299bdad2af1",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-rashmi-kabab.webp",
+    "previous_image_url": "/assets/food/kabab.webp"
+  },
+  {
+    "name": "Chicken Gola Kabab",
+    "id": "439a69c2-a64d-4a6f-ae16-624cd5195a72",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-gola-kabab.webp",
+    "previous_image_url": "/assets/food/kabab.webp"
+  },
+  {
+    "name": "Chicken Afghani Kabab",
+    "id": "0a68d09b-e8c6-42bf-a314-82e7371d9172",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-afghani-kabab.webp",
+    "previous_image_url": "/assets/food/kabab.webp"
+  },
+  {
+    "name": "Chicken Turkish Kabab",
+    "id": "9fef5714-3c93-44d7-a545-9439427178f2",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-turkish-kabab.webp",
+    "previous_image_url": "/assets/food/kabab.webp"
+  },
+  {
+    "name": "Beef Kabab",
+    "id": "90504de4-5d58-4a07-aeee-5e22b8650783",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/beef-kabab.webp",
+    "previous_image_url": "/assets/food/kabab.webp"
+  },
+  {
+    "name": "Beef Cheese Kabab",
+    "id": "191fc19a-022a-41d0-ac06-0edb6cf65856",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/beef-cheese-kabab.webp",
+    "previous_image_url": "/assets/food/kabab.webp"
+  },
+  {
+    "name": "Beef Rashmi Kabab",
+    "id": "f11b3339-3d0c-4149-a66d-ade7a440de15",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/beef-rashmi-kabab.webp",
+    "previous_image_url": "/assets/food/kabab.webp"
+  },
+  {
+    "name": "Beef Gola Kabab",
+    "id": "bcea6750-d18b-4235-a7c4-d19c3b7e47d0",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/beef-gola-kabab.webp",
+    "previous_image_url": "/assets/food/kabab.webp"
+  },
+  {
+    "name": "Beef Afghani Kabab",
+    "id": "bdfa34e2-7d6e-4ebd-a806-a23c13114152",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/beef-afghani-kabab.webp",
+    "previous_image_url": "/assets/food/kabab.webp"
+  },
+  {
+    "name": "Chicken Karahi",
+    "id": "7bb4dac9-c322-4063-a1bc-c1a5bb0ab40d",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-karahi.webp",
+    "previous_image_url": "/assets/food/chicken-karahi.webp"
+  },
+  {
+    "name": "Sialkoti Chicken Karahi",
+    "id": "09cf1441-1f2a-452b-a4e1-d5bf582eeacb",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/sialkoti-chicken-karahi.webp",
+    "previous_image_url": "/assets/food/chicken-karahi.webp"
+  },
+  {
+    "name": "Chicken White Karahi",
+    "id": "4ea24a8f-a4b7-4fdb-a085-8d655adcb5cf",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-white-karahi.webp",
+    "previous_image_url": "/assets/food/chicken-karahi.webp"
+  },
+  {
+    "name": "Chicken Makhani Karahi",
+    "id": "8b9b6664-2fb5-4cdc-a3cf-ab9f100f7bbe",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-makhani-karahi.webp",
+    "previous_image_url": "/assets/food/chicken-karahi.webp"
+  },
+  {
+    "name": "Chicken Black Pepper Karahi",
+    "id": "8f0ed704-c3ba-4b4e-a8c1-ed8a8d25b45c",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-black-pepper-karahi.webp",
+    "previous_image_url": "/assets/food/chicken-karahi.webp"
+  },
+  {
+    "name": "Chicken Achari Karahi",
+    "id": "73d97934-95b0-4c3c-af84-8b23a133a786",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-achari-karahi.webp",
+    "previous_image_url": "/assets/food/chicken-karahi.webp"
+  },
+  {
+    "name": "Shinwari Karahi",
+    "id": "ccc9fbbb-f054-4a2a-aa09-0114c1d9c40f",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/shinwari-karahi.webp",
+    "previous_image_url": "/assets/food/chicken-karahi.webp"
+  },
+  {
+    "name": "Peri Peri Chicken Karahi",
+    "id": "e77dc6e3-b713-4417-a4ac-677963f3cd53",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/peri-peri-chicken-karahi.webp",
+    "previous_image_url": "/assets/food/chicken-karahi.webp"
+  },
+  {
+    "name": "Chef Special Beef Karahi",
+    "id": "1892b534-a4a1-4de8-a876-be3fbc7fcd1d",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chef-special-beef-karahi.webp",
+    "previous_image_url": "/assets/food/beef-karahi.webp"
+  },
+  {
+    "name": "Beef Makhani Karahi",
+    "id": "367ce88b-a8b5-4b74-aa89-b9229f1e2d87",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/beef-makhani-karahi.webp",
+    "previous_image_url": "/assets/food/beef-karahi.webp"
+  },
+  {
+    "name": "Beef White Karahi",
+    "id": "c9122526-7c80-40b1-ad63-ba5002e494a7",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/beef-white-karahi.webp",
+    "previous_image_url": "/assets/food/beef-karahi.webp"
+  },
+  {
+    "name": "Beef Black Pepper Karahi",
+    "id": "af38a251-ccdd-44a8-af00-6e712e839201",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/beef-black-pepper-karahi.webp",
+    "previous_image_url": "/assets/food/beef-karahi.webp"
+  },
+  {
+    "name": "Beef Green Karahi",
+    "id": "ad929587-14b5-4fa2-a536-727253d4b9f5",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/beef-green-karahi.webp",
+    "previous_image_url": "/assets/food/beef-karahi.webp"
+  },
+  {
+    "name": "Chicken Handi",
+    "id": "b14bed12-4b01-4b24-a6dc-83d7e449fa2a",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-handi.webp",
+    "previous_image_url": "/assets/food/handi.webp"
+  },
+  {
+    "name": "Chicken White Handi",
+    "id": "1250ebcc-be86-48d3-a1df-fd0edc327dbf",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-white-handi.webp",
+    "previous_image_url": "/assets/food/handi.webp"
+  },
+  {
+    "name": "Chicken Makhani Handi",
+    "id": "510482a4-b51f-4979-a3eb-314a3008d3ed",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-makhani-handi.webp",
+    "previous_image_url": "/assets/food/handi.webp"
+  },
+  {
+    "name": "Chicken Green Handi",
+    "id": "ec155ed8-1496-46fe-adfd-692a026fc8f5",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-green-handi.webp",
+    "previous_image_url": "/assets/food/handi.webp"
+  },
+  {
+    "name": "Chicken Achari Handi",
+    "id": "1632e0a6-11c4-4553-adad-32adce2d2832",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-achari-handi.webp",
+    "previous_image_url": "/assets/food/handi.webp"
+  },
+  {
+    "name": "Chicken Peri Handi",
+    "id": "d073d5da-d42a-4da1-a2fd-db20f7777b01",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-peri-handi.webp",
+    "previous_image_url": "/assets/food/handi.webp"
+  },
+  {
+    "name": "Chicken Kabab Masala",
+    "id": "be8454be-6c56-44ba-a5be-80447cd960de",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-kabab-masala.webp",
+    "previous_image_url": "/assets/food/masala.webp"
+  },
+  {
+    "name": "Chicken White Kabab Masala",
+    "id": "3956a8c8-2f0e-4102-a4d4-13cb4074f6d9",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-white-kabab-masala.webp",
+    "previous_image_url": "/assets/food/masala.webp"
+  },
+  {
+    "name": "Chicken Green Kabab Masala",
+    "id": "edf667f7-bc2a-44af-a1c4-dd8f101eaf35",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-green-kabab-masala.webp",
+    "previous_image_url": "/assets/food/masala.webp"
+  },
+  {
+    "name": "Beef Kabab Masala",
+    "id": "cf6cf973-ef75-403c-aa4e-582a4800fa3c",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/beef-kabab-masala.webp",
+    "previous_image_url": "/assets/food/masala.webp"
+  },
+  {
+    "name": "Beef White Kabab Masala",
+    "id": "58d63aa0-d85e-44c0-aa36-005bc8d89e02",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/beef-white-kabab-masala.webp",
+    "previous_image_url": "/assets/food/masala.webp"
+  },
+  {
+    "name": "Beef Green Kabab Masala",
+    "id": "e9e59b90-9c6e-49e8-ad49-5137a6698b1b",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/beef-green-kabab-masala.webp",
+    "previous_image_url": "/assets/food/masala.webp"
+  },
+  {
+    "name": "Chicken Qeema",
+    "id": "72354a91-0191-4edd-a8f2-211a1a7d8aa8",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/chicken-qeema.webp",
+    "previous_image_url": "/assets/food/qeema.webp"
+  },
+  {
+    "name": "Beef Qeema",
+    "id": "24c67099-ef1c-4e29-a36e-1ec7e966570e",
+    "url": "https://zqghhrkmignugbwqstjh.supabase.co/storage/v1/object/public/food-images/menu/ai-v1/beef-qeema.webp",
+    "previous_image_url": "/assets/food/qeema.webp"
+  }
+]

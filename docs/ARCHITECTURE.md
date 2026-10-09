@@ -6,7 +6,8 @@ The existing HTML/CSS/JavaScript public site is preserved. An Express 5 Node ser
 
 - `client/store.js`: shared API client, persistent local cart and safe HTML escaping.
 - `client/commerce.js`: delivery/takeaway checkout, authoritative quotes and private tracking.
-- `client/admin.js`: real admin forms and order management.
+- `client/admin.js`: admin forms, catalog and settings management.
+- `client/order-desk.js`: simple order cards, status filters, search, details and next-step actions.
 - `server/app.mjs`: authenticated routes, HTTP-only sessions, origin checks, upload handling, rate limiting and static routing.
 - `server/validation.mjs`: strict request schemas; unknown client fields such as invented prices/payment methods are rejected.
 - `server/supabase.mjs`: Supabase Auth and data-access adapter.
@@ -47,9 +48,9 @@ Completing a cash order records it as paid; the dashboard explicitly asks staff 
 
 ## Deployment and operations
 
-The Node server is required. A static `public_html` upload alone cannot run admin or checkout. Use a Hostinger offering that supports a Node server, or a VPS with Node and an HTTPS reverse proxy. `HOST=0.0.0.0` exposes the app to a managed host/container when needed; local development defaults to loopback. `APP_URL` must be the exact public HTTPS origin in production. Set `TRUST_PROXY_HOPS` only for the verified proxy chain.
+The live site runs Express on Vercel through `server.mjs`; `npm run build:vercel` publishes browser assets through the CDN and leaves protected HTML behind the server. A static `public_html` upload alone cannot run admin or checkout. A standalone Node host remains supported through `npm start`. `HOST=0.0.0.0` exposes that server to a managed host/container when needed; local development defaults to loopback. `APP_URL` must be the exact public HTTPS origin in production. Set `TRUST_PROXY_HOPS` only for the verified proxy chain.
 
-Rate limits are per-process. Deploy one application process initially; multiple replicas need a shared rate-limit store. Supabase transactions and idempotency remain authoritative across processes. Admin order search is paginated across all orders. Add centralized monitoring as order volume grows.
+Rate limits are per-process (per function instance on Vercel); distributed deployments need shared rate limiting or platform firewall controls as traffic grows. Supabase transactions and idempotency remain authoritative across instances. Admin order search is paginated across all orders.
 
 Opening hours are editable display text. Acceptance is explicitly controlled by delivery/takeaway switches; staff must pause orders when the kitchen is closed. Scheduled pickup uses Pakistan time, must allow the configured minimum preparation time and must be within 7 days. Automated weekly opening-hour enforcement is not implemented.
 

@@ -1,0 +1,11 @@
+import sharp from 'sharp';
+import {readFileSync,writeFileSync} from 'node:fs';
+const [slug,source]=process.argv.slice(2);
+if(!/^[a-z0-9-]+$/.test(slug)||!source)throw Error('Expected product slug and generated image path');
+const destination=`assets/food-ai/${slug}.webp`;
+await sharp(source).resize({width:1200,height:1200,fit:'inside',withoutEnlargement:true}).webp({quality:92,effort:6}).toFile(destination);
+const manifest=JSON.parse(readFileSync('docs/food-image-manifest.json','utf8'));
+const entry=manifest.find(x=>x.slug===slug);if(!entry)throw Error('Unknown product');
+entry.status='generated';entry.asset='/'+destination;entry.generator='built-in image_gen';
+writeFileSync('docs/food-image-manifest.json',JSON.stringify(manifest,null,2));
+console.log(JSON.stringify({name:entry.name,asset:entry.asset,...await sharp(destination).metadata().then(x=>({width:x.width,height:x.height}))}));

@@ -1,0 +1,948 @@
+[
+  {
+    "name": "Chicken Sajji",
+    "category": "Sajji & Rice",
+    "slug": "chicken-sajji",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Sajji. Pakistani slow-roasted whole chicken with golden charred skin; show spiced long-grain basmati rice unless the name says without Rice. Chargha has deep red spices and grilled skin.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-sajji.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Peri Peri Sajji",
+    "category": "Sajji & Rice",
+    "slug": "chicken-peri-peri-sajji",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Peri Peri Sajji. Pakistani slow-roasted whole chicken with golden charred skin; show spiced long-grain basmati rice unless the name says without Rice. Chargha has deep red spices and grilled skin.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-peri-peri-sajji.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Malai Sajji",
+    "category": "Sajji & Rice",
+    "slug": "chicken-malai-sajji",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Malai Sajji. Pakistani slow-roasted whole chicken with golden charred skin; show spiced long-grain basmati rice unless the name says without Rice. Chargha has deep red spices and grilled skin.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-malai-sajji.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Butter Sajji",
+    "category": "Sajji & Rice",
+    "slug": "chicken-butter-sajji",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Butter Sajji. Pakistani slow-roasted whole chicken with golden charred skin; show spiced long-grain basmati rice unless the name says without Rice. Chargha has deep red spices and grilled skin.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-butter-sajji.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Black Pepper Sajji",
+    "category": "Sajji & Rice",
+    "slug": "chicken-black-pepper-sajji",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Black Pepper Sajji. Pakistani slow-roasted whole chicken with golden charred skin; show spiced long-grain basmati rice unless the name says without Rice. Chargha has deep red spices and grilled skin.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-black-pepper-sajji.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken White Pepper Sajji",
+    "category": "Sajji & Rice",
+    "slug": "chicken-white-pepper-sajji",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken White Pepper Sajji. Pakistani slow-roasted whole chicken with golden charred skin; show spiced long-grain basmati rice unless the name says without Rice. Chargha has deep red spices and grilled skin.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-white-pepper-sajji.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Cheese Sajji",
+    "category": "Sajji & Rice",
+    "slug": "chicken-cheese-sajji",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Cheese Sajji. Pakistani slow-roasted whole chicken with golden charred skin; show spiced long-grain basmati rice unless the name says without Rice. Chargha has deep red spices and grilled skin.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-cheese-sajji.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Sajji without Rice",
+    "category": "Sajji & Rice",
+    "slug": "chicken-sajji-without-rice",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Sajji without Rice. Pakistani slow-roasted whole chicken with golden charred skin; show spiced long-grain basmati rice unless the name says without Rice. Chargha has deep red spices and grilled skin.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-sajji-without-rice.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Grilled Chargha",
+    "category": "Sajji & Rice",
+    "slug": "grilled-chargha",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Grilled Chargha. Pakistani slow-roasted whole chicken with golden charred skin; show spiced long-grain basmati rice unless the name says without Rice. Chargha has deep red spices and grilled skin.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/grilled-chargha.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Pangasius Fish with Rice · 1 kg",
+    "category": "Fish",
+    "slug": "pangasius-fish-with-rice-1-kg",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Pangasius Fish with Rice · 1 kg. Pakistani grilled fish, char marks and lemon. Pangasius is boneless white fish fillet; tikka is fish chunks. Rahu is bone-in carp fish steaks. Include rice only when specified.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/pangasius-fish-with-rice-1-kg.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Pangasius Fish Grilled · 1 kg",
+    "category": "Fish",
+    "slug": "pangasius-fish-grilled-1-kg",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Pangasius Fish Grilled · 1 kg. Pakistani grilled fish, char marks and lemon. Pangasius is boneless white fish fillet; tikka is fish chunks. Rahu is bone-in carp fish steaks. Include rice only when specified.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/pangasius-fish-grilled-1-kg.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Pangasius Fish Tikka · 12 pieces",
+    "category": "Fish",
+    "slug": "pangasius-fish-tikka-12-pieces",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Pangasius Fish Tikka · 12 pieces. Pakistani grilled fish, char marks and lemon. Pangasius is boneless white fish fillet; tikka is fish chunks. Rahu is bone-in carp fish steaks. Include rice only when specified.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/pangasius-fish-tikka-12-pieces.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Rahu Fish Grilled · 1 kg",
+    "category": "Fish",
+    "slug": "rahu-fish-grilled-1-kg",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Rahu Fish Grilled · 1 kg. Pakistani grilled fish, char marks and lemon. Pangasius is boneless white fish fillet; tikka is fish chunks. Rahu is bone-in carp fish steaks. Include rice only when specified.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/rahu-fish-grilled-1-kg.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Malai Boti",
+    "category": "BBQ",
+    "slug": "chicken-malai-boti",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Malai Boti. Pakistani charcoal-grilled chicken. Boti means boneless chunks on skewers; chest piece is bone-in chicken breast and wing; leg piece is bone-in thigh and drumstick. Malai is pale creamy marinade; tikka has red spices. Cheese is visibly melted when named.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-malai-boti.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Tikka Boti",
+    "category": "BBQ",
+    "slug": "chicken-tikka-boti",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Tikka Boti. Pakistani charcoal-grilled chicken. Boti means boneless chunks on skewers; chest piece is bone-in chicken breast and wing; leg piece is bone-in thigh and drumstick. Malai is pale creamy marinade; tikka has red spices. Cheese is visibly melted when named.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-tikka-boti.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Pasha Boti",
+    "category": "BBQ",
+    "slug": "pasha-boti",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Pasha Boti. Pakistani charcoal-grilled chicken. Boti means boneless chunks on skewers; chest piece is bone-in chicken breast and wing; leg piece is bone-in thigh and drumstick. Malai is pale creamy marinade; tikka has red spices. Cheese is visibly melted when named.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/pasha-boti.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Chest Piece",
+    "category": "BBQ",
+    "slug": "chicken-chest-piece",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Chest Piece. Pakistani charcoal-grilled chicken. Boti means boneless chunks on skewers; chest piece is bone-in chicken breast and wing; leg piece is bone-in thigh and drumstick. Malai is pale creamy marinade; tikka has red spices. Cheese is visibly melted when named.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-chest-piece.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Leg Piece",
+    "category": "BBQ",
+    "slug": "chicken-leg-piece",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Leg Piece. Pakistani charcoal-grilled chicken. Boti means boneless chunks on skewers; chest piece is bone-in chicken breast and wing; leg piece is bone-in thigh and drumstick. Malai is pale creamy marinade; tikka has red spices. Cheese is visibly melted when named.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-leg-piece.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Malai Chest Piece",
+    "category": "BBQ",
+    "slug": "chicken-malai-chest-piece",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Malai Chest Piece. Pakistani charcoal-grilled chicken. Boti means boneless chunks on skewers; chest piece is bone-in chicken breast and wing; leg piece is bone-in thigh and drumstick. Malai is pale creamy marinade; tikka has red spices. Cheese is visibly melted when named.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-malai-chest-piece.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Malai Leg Piece",
+    "category": "BBQ",
+    "slug": "chicken-malai-leg-piece",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Malai Leg Piece. Pakistani charcoal-grilled chicken. Boti means boneless chunks on skewers; chest piece is bone-in chicken breast and wing; leg piece is bone-in thigh and drumstick. Malai is pale creamy marinade; tikka has red spices. Cheese is visibly melted when named.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-malai-leg-piece.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Cheese & Malai Chest Piece",
+    "category": "BBQ",
+    "slug": "chicken-cheese-and-malai-chest-piece",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Cheese & Malai Chest Piece. Pakistani charcoal-grilled chicken. Boti means boneless chunks on skewers; chest piece is bone-in chicken breast and wing; leg piece is bone-in thigh and drumstick. Malai is pale creamy marinade; tikka has red spices. Cheese is visibly melted when named.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-cheese-and-malai-chest-piece.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Cheese & Malai Leg Piece",
+    "category": "BBQ",
+    "slug": "chicken-cheese-and-malai-leg-piece",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Cheese & Malai Leg Piece. Pakistani charcoal-grilled chicken. Boti means boneless chunks on skewers; chest piece is bone-in chicken breast and wing; leg piece is bone-in thigh and drumstick. Malai is pale creamy marinade; tikka has red spices. Cheese is visibly melted when named.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-cheese-and-malai-leg-piece.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Kabab",
+    "category": "Kabab",
+    "slug": "chicken-kabab",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Kabab. Pakistani grilled minced-meat kebabs. Use chicken or beef exactly as named. Seekh kebabs are long cylinders, Gola kebabs are small rounded oval kebabs, Rashmi is pale creamy. Cheese kebabs show a small melted cheese filling.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-kabab.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Cheese Kabab",
+    "category": "Kabab",
+    "slug": "chicken-cheese-kabab",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Cheese Kabab. Pakistani grilled minced-meat kebabs. Use chicken or beef exactly as named. Seekh kebabs are long cylinders, Gola kebabs are small rounded oval kebabs, Rashmi is pale creamy. Cheese kebabs show a small melted cheese filling.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-cheese-kabab.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Rashmi Kabab",
+    "category": "Kabab",
+    "slug": "chicken-rashmi-kabab",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Rashmi Kabab. Pakistani grilled minced-meat kebabs. Use chicken or beef exactly as named. Seekh kebabs are long cylinders, Gola kebabs are small rounded oval kebabs, Rashmi is pale creamy. Cheese kebabs show a small melted cheese filling.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-rashmi-kabab.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Gola Kabab",
+    "category": "Kabab",
+    "slug": "chicken-gola-kabab",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Gola Kabab. Pakistani grilled minced-meat kebabs. Use chicken or beef exactly as named. Seekh kebabs are long cylinders, Gola kebabs are small rounded oval kebabs, Rashmi is pale creamy. Cheese kebabs show a small melted cheese filling.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-gola-kabab.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Afghani Kabab",
+    "category": "Kabab",
+    "slug": "chicken-afghani-kabab",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Afghani Kabab. Pakistani grilled minced-meat kebabs. Use chicken or beef exactly as named. Seekh kebabs are long cylinders, Gola kebabs are small rounded oval kebabs, Rashmi is pale creamy. Cheese kebabs show a small melted cheese filling.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-afghani-kabab.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Turkish Kabab",
+    "category": "Kabab",
+    "slug": "chicken-turkish-kabab",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Turkish Kabab. Pakistani grilled minced-meat kebabs. Use chicken or beef exactly as named. Seekh kebabs are long cylinders, Gola kebabs are small rounded oval kebabs, Rashmi is pale creamy. Cheese kebabs show a small melted cheese filling.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-turkish-kabab.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Beef Kabab",
+    "category": "Kabab",
+    "slug": "beef-kabab",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Beef Kabab. Pakistani grilled minced-meat kebabs. Use chicken or beef exactly as named. Seekh kebabs are long cylinders, Gola kebabs are small rounded oval kebabs, Rashmi is pale creamy. Cheese kebabs show a small melted cheese filling.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/beef-kabab.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Beef Cheese Kabab",
+    "category": "Kabab",
+    "slug": "beef-cheese-kabab",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Beef Cheese Kabab. Pakistani grilled minced-meat kebabs. Use chicken or beef exactly as named. Seekh kebabs are long cylinders, Gola kebabs are small rounded oval kebabs, Rashmi is pale creamy. Cheese kebabs show a small melted cheese filling.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/beef-cheese-kabab.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Beef Rashmi Kabab",
+    "category": "Kabab",
+    "slug": "beef-rashmi-kabab",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Beef Rashmi Kabab. Pakistani grilled minced-meat kebabs. Use chicken or beef exactly as named. Seekh kebabs are long cylinders, Gola kebabs are small rounded oval kebabs, Rashmi is pale creamy. Cheese kebabs show a small melted cheese filling.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/beef-rashmi-kabab.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Beef Gola Kabab",
+    "category": "Kabab",
+    "slug": "beef-gola-kabab",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Beef Gola Kabab. Pakistani grilled minced-meat kebabs. Use chicken or beef exactly as named. Seekh kebabs are long cylinders, Gola kebabs are small rounded oval kebabs, Rashmi is pale creamy. Cheese kebabs show a small melted cheese filling.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/beef-gola-kabab.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Beef Afghani Kabab",
+    "category": "Kabab",
+    "slug": "beef-afghani-kabab",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Beef Afghani Kabab. Pakistani grilled minced-meat kebabs. Use chicken or beef exactly as named. Seekh kebabs are long cylinders, Gola kebabs are small rounded oval kebabs, Rashmi is pale creamy. Cheese kebabs show a small melted cheese filling.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/beef-afghani-kabab.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Karahi",
+    "category": "Karahi",
+    "slug": "chicken-karahi",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Karahi. Authentic Pakistani karahi in a small black two-handled metal wok, cooked chicken or beef exactly as named, thick tomato masala. White means cream gravy, green means coriander-chilli gravy, makhani means butter gravy, achari means pickling spices. Garnish with ginger julienne and fresh coriander.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-karahi.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Sialkoti Chicken Karahi",
+    "category": "Karahi",
+    "slug": "sialkoti-chicken-karahi",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Sialkoti Chicken Karahi. Authentic Pakistani karahi in a small black two-handled metal wok, cooked chicken or beef exactly as named, thick tomato masala. White means cream gravy, green means coriander-chilli gravy, makhani means butter gravy, achari means pickling spices. Garnish with ginger julienne and fresh coriander.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/sialkoti-chicken-karahi.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken White Karahi",
+    "category": "Karahi",
+    "slug": "chicken-white-karahi",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken White Karahi. Authentic Pakistani karahi in a small black two-handled metal wok, cooked chicken or beef exactly as named, thick tomato masala. White means cream gravy, green means coriander-chilli gravy, makhani means butter gravy, achari means pickling spices. Garnish with ginger julienne and fresh coriander.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-white-karahi.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Makhani Karahi",
+    "category": "Karahi",
+    "slug": "chicken-makhani-karahi",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Makhani Karahi. Authentic Pakistani karahi in a small black two-handled metal wok, cooked chicken or beef exactly as named, thick tomato masala. White means cream gravy, green means coriander-chilli gravy, makhani means butter gravy, achari means pickling spices. Garnish with ginger julienne and fresh coriander.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-makhani-karahi.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Black Pepper Karahi",
+    "category": "Karahi",
+    "slug": "chicken-black-pepper-karahi",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Black Pepper Karahi. Authentic Pakistani karahi in a small black two-handled metal wok, cooked chicken or beef exactly as named, thick tomato masala. White means cream gravy, green means coriander-chilli gravy, makhani means butter gravy, achari means pickling spices. Garnish with ginger julienne and fresh coriander.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-black-pepper-karahi.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Achari Karahi",
+    "category": "Karahi",
+    "slug": "chicken-achari-karahi",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Achari Karahi. Authentic Pakistani karahi in a small black two-handled metal wok, cooked chicken or beef exactly as named, thick tomato masala. White means cream gravy, green means coriander-chilli gravy, makhani means butter gravy, achari means pickling spices. Garnish with ginger julienne and fresh coriander.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-achari-karahi.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Shinwari Karahi",
+    "category": "Karahi",
+    "slug": "shinwari-karahi",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Shinwari Karahi. Authentic Pakistani karahi in a small black two-handled metal wok, cooked chicken or beef exactly as named, thick tomato masala. White means cream gravy, green means coriander-chilli gravy, makhani means butter gravy, achari means pickling spices. Garnish with ginger julienne and fresh coriander.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/shinwari-karahi.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Peri Peri Chicken Karahi",
+    "category": "Karahi",
+    "slug": "peri-peri-chicken-karahi",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Peri Peri Chicken Karahi. Authentic Pakistani karahi in a small black two-handled metal wok, cooked chicken or beef exactly as named, thick tomato masala. White means cream gravy, green means coriander-chilli gravy, makhani means butter gravy, achari means pickling spices. Garnish with ginger julienne and fresh coriander.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/peri-peri-chicken-karahi.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chef Special Beef Karahi",
+    "category": "Karahi",
+    "slug": "chef-special-beef-karahi",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chef Special Beef Karahi. Authentic Pakistani karahi in a small black two-handled metal wok, cooked chicken or beef exactly as named, thick tomato masala. White means cream gravy, green means coriander-chilli gravy, makhani means butter gravy, achari means pickling spices. Garnish with ginger julienne and fresh coriander.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chef-special-beef-karahi.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Beef Makhani Karahi",
+    "category": "Karahi",
+    "slug": "beef-makhani-karahi",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Beef Makhani Karahi. Authentic Pakistani karahi in a small black two-handled metal wok, cooked chicken or beef exactly as named, thick tomato masala. White means cream gravy, green means coriander-chilli gravy, makhani means butter gravy, achari means pickling spices. Garnish with ginger julienne and fresh coriander.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/beef-makhani-karahi.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Beef White Karahi",
+    "category": "Karahi",
+    "slug": "beef-white-karahi",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Beef White Karahi. Authentic Pakistani karahi in a small black two-handled metal wok, cooked chicken or beef exactly as named, thick tomato masala. White means cream gravy, green means coriander-chilli gravy, makhani means butter gravy, achari means pickling spices. Garnish with ginger julienne and fresh coriander.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/beef-white-karahi.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Beef Black Pepper Karahi",
+    "category": "Karahi",
+    "slug": "beef-black-pepper-karahi",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Beef Black Pepper Karahi. Authentic Pakistani karahi in a small black two-handled metal wok, cooked chicken or beef exactly as named, thick tomato masala. White means cream gravy, green means coriander-chilli gravy, makhani means butter gravy, achari means pickling spices. Garnish with ginger julienne and fresh coriander.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/beef-black-pepper-karahi.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Beef Green Karahi",
+    "category": "Karahi",
+    "slug": "beef-green-karahi",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Beef Green Karahi. Authentic Pakistani karahi in a small black two-handled metal wok, cooked chicken or beef exactly as named, thick tomato masala. White means cream gravy, green means coriander-chilli gravy, makhani means butter gravy, achari means pickling spices. Garnish with ginger julienne and fresh coriander.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/beef-green-karahi.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Handi",
+    "category": "Handi",
+    "slug": "chicken-handi",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Handi. Pakistani boneless chicken curry in a rustic clay handi. White means cream sauce; green means herb sauce; makhani means butter-tomato sauce; achari means pickling spices; peri means red chilli sauce.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-handi.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken White Handi",
+    "category": "Handi",
+    "slug": "chicken-white-handi",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken White Handi. Pakistani boneless chicken curry in a rustic clay handi. White means cream sauce; green means herb sauce; makhani means butter-tomato sauce; achari means pickling spices; peri means red chilli sauce.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-white-handi.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Makhani Handi",
+    "category": "Handi",
+    "slug": "chicken-makhani-handi",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Makhani Handi. Pakistani boneless chicken curry in a rustic clay handi. White means cream sauce; green means herb sauce; makhani means butter-tomato sauce; achari means pickling spices; peri means red chilli sauce.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-makhani-handi.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Green Handi",
+    "category": "Handi",
+    "slug": "chicken-green-handi",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Green Handi. Pakistani boneless chicken curry in a rustic clay handi. White means cream sauce; green means herb sauce; makhani means butter-tomato sauce; achari means pickling spices; peri means red chilli sauce.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-green-handi.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Achari Handi",
+    "category": "Handi",
+    "slug": "chicken-achari-handi",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Achari Handi. Pakistani boneless chicken curry in a rustic clay handi. White means cream sauce; green means herb sauce; makhani means butter-tomato sauce; achari means pickling spices; peri means red chilli sauce.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-achari-handi.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Peri Handi",
+    "category": "Handi",
+    "slug": "chicken-peri-handi",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Peri Handi. Pakistani boneless chicken curry in a rustic clay handi. White means cream sauce; green means herb sauce; makhani means butter-tomato sauce; achari means pickling spices; peri means red chilli sauce.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-peri-handi.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Kabab Masala",
+    "category": "Tawa",
+    "slug": "chicken-kabab-masala",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Kabab Masala. Pakistani tawa dish on a black skillet. Kabab masala shows meat kebabs coated in gravy. Qeema means cooked minced meat, not whole pieces. White is cream gravy; green is herb gravy. Tawa Piece is a bone-in chicken portion in thick spicy masala.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-kabab-masala.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken White Kabab Masala",
+    "category": "Tawa",
+    "slug": "chicken-white-kabab-masala",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken White Kabab Masala. Pakistani tawa dish on a black skillet. Kabab masala shows meat kebabs coated in gravy. Qeema means cooked minced meat, not whole pieces. White is cream gravy; green is herb gravy. Tawa Piece is a bone-in chicken portion in thick spicy masala.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-white-kabab-masala.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Green Kabab Masala",
+    "category": "Tawa",
+    "slug": "chicken-green-kabab-masala",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Green Kabab Masala. Pakistani tawa dish on a black skillet. Kabab masala shows meat kebabs coated in gravy. Qeema means cooked minced meat, not whole pieces. White is cream gravy; green is herb gravy. Tawa Piece is a bone-in chicken portion in thick spicy masala.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-green-kabab-masala.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Beef Kabab Masala",
+    "category": "Tawa",
+    "slug": "beef-kabab-masala",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Beef Kabab Masala. Pakistani tawa dish on a black skillet. Kabab masala shows meat kebabs coated in gravy. Qeema means cooked minced meat, not whole pieces. White is cream gravy; green is herb gravy. Tawa Piece is a bone-in chicken portion in thick spicy masala.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/beef-kabab-masala.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Beef White Kabab Masala",
+    "category": "Tawa",
+    "slug": "beef-white-kabab-masala",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Beef White Kabab Masala. Pakistani tawa dish on a black skillet. Kabab masala shows meat kebabs coated in gravy. Qeema means cooked minced meat, not whole pieces. White is cream gravy; green is herb gravy. Tawa Piece is a bone-in chicken portion in thick spicy masala.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/beef-white-kabab-masala.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Beef Green Kabab Masala",
+    "category": "Tawa",
+    "slug": "beef-green-kabab-masala",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Beef Green Kabab Masala. Pakistani tawa dish on a black skillet. Kabab masala shows meat kebabs coated in gravy. Qeema means cooked minced meat, not whole pieces. White is cream gravy; green is herb gravy. Tawa Piece is a bone-in chicken portion in thick spicy masala.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/beef-green-kabab-masala.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Qeema",
+    "category": "Tawa",
+    "slug": "chicken-qeema",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Qeema. Pakistani tawa dish on a black skillet. Kabab masala shows meat kebabs coated in gravy. Qeema means cooked minced meat, not whole pieces. White is cream gravy; green is herb gravy. Tawa Piece is a bone-in chicken portion in thick spicy masala.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-qeema.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Beef Qeema",
+    "category": "Tawa",
+    "slug": "beef-qeema",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Beef Qeema. Pakistani tawa dish on a black skillet. Kabab masala shows meat kebabs coated in gravy. Qeema means cooked minced meat, not whole pieces. White is cream gravy; green is herb gravy. Tawa Piece is a bone-in chicken portion in thick spicy masala.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/beef-qeema.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Tawa Piece",
+    "category": "Tawa",
+    "slug": "tawa-piece",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Tawa Piece. Pakistani tawa dish on a black skillet. Kabab masala shows meat kebabs coated in gravy. Qeema means cooked minced meat, not whole pieces. White is cream gravy; green is herb gravy. Tawa Piece is a bone-in chicken portion in thick spicy masala.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/tawa-piece.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Masala Fries",
+    "category": "Sides",
+    "slug": "masala-fries",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Masala Fries. Precisely the named fried side dish. Simple fries plain golden, masala fries dusted with red spice; loaded fries have chicken and cheese sauce; BBQ fries have smoky barbecue sauce; chicken cheese fries show chicken and cheese. Wings are chicken wings, nuggets breaded bite-sized chicken pieces.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/masala-fries.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Loaded Fries",
+    "category": "Sides",
+    "slug": "loaded-fries",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Loaded Fries. Precisely the named fried side dish. Simple fries plain golden, masala fries dusted with red spice; loaded fries have chicken and cheese sauce; BBQ fries have smoky barbecue sauce; chicken cheese fries show chicken and cheese. Wings are chicken wings, nuggets breaded bite-sized chicken pieces.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/loaded-fries.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Cheese Fries",
+    "category": "Sides",
+    "slug": "chicken-cheese-fries",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Cheese Fries. Precisely the named fried side dish. Simple fries plain golden, masala fries dusted with red spice; loaded fries have chicken and cheese sauce; BBQ fries have smoky barbecue sauce; chicken cheese fries show chicken and cheese. Wings are chicken wings, nuggets breaded bite-sized chicken pieces.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-cheese-fries.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "BBQ Fries",
+    "category": "Sides",
+    "slug": "bbq-fries",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: BBQ Fries. Precisely the named fried side dish. Simple fries plain golden, masala fries dusted with red spice; loaded fries have chicken and cheese sauce; BBQ fries have smoky barbecue sauce; chicken cheese fries show chicken and cheese. Wings are chicken wings, nuggets breaded bite-sized chicken pieces.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/bbq-fries.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Simple Fries",
+    "category": "Sides",
+    "slug": "simple-fries",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Simple Fries. Precisely the named fried side dish. Simple fries plain golden, masala fries dusted with red spice; loaded fries have chicken and cheese sauce; BBQ fries have smoky barbecue sauce; chicken cheese fries show chicken and cheese. Wings are chicken wings, nuggets breaded bite-sized chicken pieces.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/simple-fries.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Hot Wings",
+    "category": "Sides",
+    "slug": "hot-wings",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Hot Wings. Precisely the named fried side dish. Simple fries plain golden, masala fries dusted with red spice; loaded fries have chicken and cheese sauce; BBQ fries have smoky barbecue sauce; chicken cheese fries show chicken and cheese. Wings are chicken wings, nuggets breaded bite-sized chicken pieces.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Nuggets",
+    "category": "Sides",
+    "slug": "nuggets",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Nuggets. Precisely the named fried side dish. Simple fries plain golden, masala fries dusted with red spice; loaded fries have chicken and cheese sauce; BBQ fries have smoky barbecue sauce; chicken cheese fries show chicken and cheese. Wings are chicken wings, nuggets breaded bite-sized chicken pieces.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Chef Special Paratha Roll",
+    "category": "Paratha Rolls",
+    "slug": "chef-special-paratha-roll",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chef Special Paratha Roll. A flaky golden Pakistani paratha roll, cut diagonally into two halves so the actual filling is clearly visible. Chicken tikka is red-spiced grilled chunks; malai is creamy grilled chicken chunks; kabab is minced chicken or beef cylinder; crunchy chicken is breaded fried chicken. Show melted cheese only when named. Not a tortilla or burger.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Chicken Malai Paratha Roll",
+    "category": "Paratha Rolls",
+    "slug": "chicken-malai-paratha-roll",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Malai Paratha Roll. A flaky golden Pakistani paratha roll, cut diagonally into two halves so the actual filling is clearly visible. Chicken tikka is red-spiced grilled chunks; malai is creamy grilled chicken chunks; kabab is minced chicken or beef cylinder; crunchy chicken is breaded fried chicken. Show melted cheese only when named. Not a tortilla or burger.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Chicken Malai Cheese Paratha Roll",
+    "category": "Paratha Rolls",
+    "slug": "chicken-malai-cheese-paratha-roll",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Malai Cheese Paratha Roll. A flaky golden Pakistani paratha roll, cut diagonally into two halves so the actual filling is clearly visible. Chicken tikka is red-spiced grilled chunks; malai is creamy grilled chicken chunks; kabab is minced chicken or beef cylinder; crunchy chicken is breaded fried chicken. Show melted cheese only when named. Not a tortilla or burger.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Chicken Tikka Paratha Roll",
+    "category": "Paratha Rolls",
+    "slug": "chicken-tikka-paratha-roll",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Tikka Paratha Roll. A flaky golden Pakistani paratha roll, cut diagonally into two halves so the actual filling is clearly visible. Chicken tikka is red-spiced grilled chunks; malai is creamy grilled chicken chunks; kabab is minced chicken or beef cylinder; crunchy chicken is breaded fried chicken. Show melted cheese only when named. Not a tortilla or burger.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Chicken Tikka Cheese Paratha Roll",
+    "category": "Paratha Rolls",
+    "slug": "chicken-tikka-cheese-paratha-roll",
+    "status": "generated",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Tikka Cheese Paratha Roll. A flaky golden Pakistani paratha roll, cut diagonally into two halves so the actual filling is clearly visible. Chicken tikka is red-spiced grilled chunks; malai is creamy grilled chicken chunks; kabab is minced chicken or beef cylinder; crunchy chicken is breaded fried chicken. Show melted cheese only when named. Not a tortilla or burger.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product.",
+    "asset": "/assets/food-ai/chicken-tikka-cheese-paratha-roll.webp",
+    "generator": "built-in image_gen"
+  },
+  {
+    "name": "Chicken Kabab Paratha Roll",
+    "category": "Paratha Rolls",
+    "slug": "chicken-kabab-paratha-roll",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Kabab Paratha Roll. A flaky golden Pakistani paratha roll, cut diagonally into two halves so the actual filling is clearly visible. Chicken tikka is red-spiced grilled chunks; malai is creamy grilled chicken chunks; kabab is minced chicken or beef cylinder; crunchy chicken is breaded fried chicken. Show melted cheese only when named. Not a tortilla or burger.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Chicken Kabab Cheese Paratha Roll",
+    "category": "Paratha Rolls",
+    "slug": "chicken-kabab-cheese-paratha-roll",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Kabab Cheese Paratha Roll. A flaky golden Pakistani paratha roll, cut diagonally into two halves so the actual filling is clearly visible. Chicken tikka is red-spiced grilled chunks; malai is creamy grilled chicken chunks; kabab is minced chicken or beef cylinder; crunchy chicken is breaded fried chicken. Show melted cheese only when named. Not a tortilla or burger.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Beef Kabab Paratha Roll",
+    "category": "Paratha Rolls",
+    "slug": "beef-kabab-paratha-roll",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Beef Kabab Paratha Roll. A flaky golden Pakistani paratha roll, cut diagonally into two halves so the actual filling is clearly visible. Chicken tikka is red-spiced grilled chunks; malai is creamy grilled chicken chunks; kabab is minced chicken or beef cylinder; crunchy chicken is breaded fried chicken. Show melted cheese only when named. Not a tortilla or burger.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Beef Cheese Kabab Paratha Roll",
+    "category": "Paratha Rolls",
+    "slug": "beef-cheese-kabab-paratha-roll",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Beef Cheese Kabab Paratha Roll. A flaky golden Pakistani paratha roll, cut diagonally into two halves so the actual filling is clearly visible. Chicken tikka is red-spiced grilled chunks; malai is creamy grilled chicken chunks; kabab is minced chicken or beef cylinder; crunchy chicken is breaded fried chicken. Show melted cheese only when named. Not a tortilla or burger.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Crunchy Chicken Paratha Roll",
+    "category": "Paratha Rolls",
+    "slug": "crunchy-chicken-paratha-roll",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Crunchy Chicken Paratha Roll. A flaky golden Pakistani paratha roll, cut diagonally into two halves so the actual filling is clearly visible. Chicken tikka is red-spiced grilled chunks; malai is creamy grilled chicken chunks; kabab is minced chicken or beef cylinder; crunchy chicken is breaded fried chicken. Show melted cheese only when named. Not a tortilla or burger.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Zinger Burger",
+    "category": "Burgers",
+    "slug": "zinger-burger",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Zinger Burger. One realistic burger with the named filling. Zinger has crispy fried chicken, Chicken Petty has a chicken patty, Double Dacker has two chicken patties and layered bun, Fish has a crispy fish fillet, Stuff Burger has a thick stuffed chicken patty. Lettuce and sauce, fresh bun.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Stuff Burger",
+    "category": "Burgers",
+    "slug": "stuff-burger",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Stuff Burger. One realistic burger with the named filling. Zinger has crispy fried chicken, Chicken Petty has a chicken patty, Double Dacker has two chicken patties and layered bun, Fish has a crispy fish fillet, Stuff Burger has a thick stuffed chicken patty. Lettuce and sauce, fresh bun.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Chicken Petty Burger",
+    "category": "Burgers",
+    "slug": "chicken-petty-burger",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chicken Petty Burger. One realistic burger with the named filling. Zinger has crispy fried chicken, Chicken Petty has a chicken patty, Double Dacker has two chicken patties and layered bun, Fish has a crispy fish fillet, Stuff Burger has a thick stuffed chicken patty. Lettuce and sauce, fresh bun.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Double Dacker Burger",
+    "category": "Burgers",
+    "slug": "double-dacker-burger",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Double Dacker Burger. One realistic burger with the named filling. Zinger has crispy fried chicken, Chicken Petty has a chicken patty, Double Dacker has two chicken patties and layered bun, Fish has a crispy fish fillet, Stuff Burger has a thick stuffed chicken patty. Lettuce and sauce, fresh bun.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Fish Burger",
+    "category": "Burgers",
+    "slug": "fish-burger",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Fish Burger. One realistic burger with the named filling. Zinger has crispy fried chicken, Chicken Petty has a chicken patty, Double Dacker has two chicken patties and layered bun, Fish has a crispy fish fillet, Stuff Burger has a thick stuffed chicken patty. Lettuce and sauce, fresh bun.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Sada Roti",
+    "category": "Tandoor",
+    "slug": "sada-roti",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Sada Roti. Only the named Pakistani bread. Sada Roti is thin plain wholewheat tandoori roti; Khameri Roti is thick leavened roti; Sada Naan plain white naan; Kulcha fluffy round bread; Kalwanji Naan has black nigella seeds; Roghni Naan glazed with ghee and sesame; Garlic Naan has chopped garlic. No curry.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Khameri Roti",
+    "category": "Tandoor",
+    "slug": "khameri-roti",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Khameri Roti. Only the named Pakistani bread. Sada Roti is thin plain wholewheat tandoori roti; Khameri Roti is thick leavened roti; Sada Naan plain white naan; Kulcha fluffy round bread; Kalwanji Naan has black nigella seeds; Roghni Naan glazed with ghee and sesame; Garlic Naan has chopped garlic. No curry.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Sada Naan",
+    "category": "Tandoor",
+    "slug": "sada-naan",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Sada Naan. Only the named Pakistani bread. Sada Roti is thin plain wholewheat tandoori roti; Khameri Roti is thick leavened roti; Sada Naan plain white naan; Kulcha fluffy round bread; Kalwanji Naan has black nigella seeds; Roghni Naan glazed with ghee and sesame; Garlic Naan has chopped garlic. No curry.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Kulcha",
+    "category": "Tandoor",
+    "slug": "kulcha",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Kulcha. Only the named Pakistani bread. Sada Roti is thin plain wholewheat tandoori roti; Khameri Roti is thick leavened roti; Sada Naan plain white naan; Kulcha fluffy round bread; Kalwanji Naan has black nigella seeds; Roghni Naan glazed with ghee and sesame; Garlic Naan has chopped garlic. No curry.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Kalwanji Naan",
+    "category": "Tandoor",
+    "slug": "kalwanji-naan",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Kalwanji Naan. Only the named Pakistani bread. Sada Roti is thin plain wholewheat tandoori roti; Khameri Roti is thick leavened roti; Sada Naan plain white naan; Kulcha fluffy round bread; Kalwanji Naan has black nigella seeds; Roghni Naan glazed with ghee and sesame; Garlic Naan has chopped garlic. No curry.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Roghni Naan",
+    "category": "Tandoor",
+    "slug": "roghni-naan",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Roghni Naan. Only the named Pakistani bread. Sada Roti is thin plain wholewheat tandoori roti; Khameri Roti is thick leavened roti; Sada Naan plain white naan; Kulcha fluffy round bread; Kalwanji Naan has black nigella seeds; Roghni Naan glazed with ghee and sesame; Garlic Naan has chopped garlic. No curry.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Garlic Naan",
+    "category": "Tandoor",
+    "slug": "garlic-naan",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Garlic Naan. Only the named Pakistani bread. Sada Roti is thin plain wholewheat tandoori roti; Khameri Roti is thick leavened roti; Sada Naan plain white naan; Kulcha fluffy round bread; Kalwanji Naan has black nigella seeds; Roghni Naan glazed with ghee and sesame; Garlic Naan has chopped garlic. No curry.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Mineral Water Large",
+    "category": "Beverages",
+    "slug": "mineral-water-large",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Mineral Water Large. An unbranded drink container with condensation. Mineral Water is clear water in a clear bottle; Large is a tall bottle, Small is a short bottle. 1.5 Litre and 1 Litre drinks are different-sized unbranded cola bottles. 345 ml is a small single-serve glass cola bottle. No text or labels.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Mineral Water Small",
+    "category": "Beverages",
+    "slug": "mineral-water-small",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Mineral Water Small. An unbranded drink container with condensation. Mineral Water is clear water in a clear bottle; Large is a tall bottle, Small is a short bottle. 1.5 Litre and 1 Litre drinks are different-sized unbranded cola bottles. 345 ml is a small single-serve glass cola bottle. No text or labels.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "1.5 Litre Drink",
+    "category": "Beverages",
+    "slug": "1-5-litre-drink",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: 1.5 Litre Drink. An unbranded drink container with condensation. Mineral Water is clear water in a clear bottle; Large is a tall bottle, Small is a short bottle. 1.5 Litre and 1 Litre drinks are different-sized unbranded cola bottles. 345 ml is a small single-serve glass cola bottle. No text or labels.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "1 Litre Drink",
+    "category": "Beverages",
+    "slug": "1-litre-drink",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: 1 Litre Drink. An unbranded drink container with condensation. Mineral Water is clear water in a clear bottle; Large is a tall bottle, Small is a short bottle. 1.5 Litre and 1 Litre drinks are different-sized unbranded cola bottles. 345 ml is a small single-serve glass cola bottle. No text or labels.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "1 NR Drink 345 ml",
+    "category": "Beverages",
+    "slug": "1-nr-drink-345-ml",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: 1 NR Drink 345 ml. An unbranded drink container with condensation. Mineral Water is clear water in a clear bottle; Large is a tall bottle, Small is a short bottle. 1.5 Litre and 1 Litre drinks are different-sized unbranded cola bottles. 345 ml is a small single-serve glass cola bottle. No text or labels.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Fresh Salad",
+    "category": "Salad & Dips",
+    "slug": "fresh-salad",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Fresh Salad. One small ceramic serving bowl, or a larger bowl for Family Raita. Show precisely the named sauce or salad. Fresh Salad is sliced cucumber tomato onion; Kachumar finely diced cucumber tomato onion. Raita is white yogurt, Zeera Raita has cumin, mint and green chutney are green, chipotle orange, cheese sauce yellow, BBQ dark brown, honey mustard golden, sweet & sour translucent red, garlic sauce ivory, spicy mayo pale orange.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Kachumar Salad",
+    "category": "Salad & Dips",
+    "slug": "kachumar-salad",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Kachumar Salad. One small ceramic serving bowl, or a larger bowl for Family Raita. Show precisely the named sauce or salad. Fresh Salad is sliced cucumber tomato onion; Kachumar finely diced cucumber tomato onion. Raita is white yogurt, Zeera Raita has cumin, mint and green chutney are green, chipotle orange, cheese sauce yellow, BBQ dark brown, honey mustard golden, sweet & sour translucent red, garlic sauce ivory, spicy mayo pale orange.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Mint Sauce Dip",
+    "category": "Salad & Dips",
+    "slug": "mint-sauce-dip",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Mint Sauce Dip. One small ceramic serving bowl, or a larger bowl for Family Raita. Show precisely the named sauce or salad. Fresh Salad is sliced cucumber tomato onion; Kachumar finely diced cucumber tomato onion. Raita is white yogurt, Zeera Raita has cumin, mint and green chutney are green, chipotle orange, cheese sauce yellow, BBQ dark brown, honey mustard golden, sweet & sour translucent red, garlic sauce ivory, spicy mayo pale orange.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Chipotle Sauce Dip",
+    "category": "Salad & Dips",
+    "slug": "chipotle-sauce-dip",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Chipotle Sauce Dip. One small ceramic serving bowl, or a larger bowl for Family Raita. Show precisely the named sauce or salad. Fresh Salad is sliced cucumber tomato onion; Kachumar finely diced cucumber tomato onion. Raita is white yogurt, Zeera Raita has cumin, mint and green chutney are green, chipotle orange, cheese sauce yellow, BBQ dark brown, honey mustard golden, sweet & sour translucent red, garlic sauce ivory, spicy mayo pale orange.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Cheese Sauce Dip",
+    "category": "Salad & Dips",
+    "slug": "cheese-sauce-dip",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Cheese Sauce Dip. One small ceramic serving bowl, or a larger bowl for Family Raita. Show precisely the named sauce or salad. Fresh Salad is sliced cucumber tomato onion; Kachumar finely diced cucumber tomato onion. Raita is white yogurt, Zeera Raita has cumin, mint and green chutney are green, chipotle orange, cheese sauce yellow, BBQ dark brown, honey mustard golden, sweet & sour translucent red, garlic sauce ivory, spicy mayo pale orange.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "BBQ Sauce Dip",
+    "category": "Salad & Dips",
+    "slug": "bbq-sauce-dip",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: BBQ Sauce Dip. One small ceramic serving bowl, or a larger bowl for Family Raita. Show precisely the named sauce or salad. Fresh Salad is sliced cucumber tomato onion; Kachumar finely diced cucumber tomato onion. Raita is white yogurt, Zeera Raita has cumin, mint and green chutney are green, chipotle orange, cheese sauce yellow, BBQ dark brown, honey mustard golden, sweet & sour translucent red, garlic sauce ivory, spicy mayo pale orange.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Honey Mustard Dip",
+    "category": "Salad & Dips",
+    "slug": "honey-mustard-dip",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Honey Mustard Dip. One small ceramic serving bowl, or a larger bowl for Family Raita. Show precisely the named sauce or salad. Fresh Salad is sliced cucumber tomato onion; Kachumar finely diced cucumber tomato onion. Raita is white yogurt, Zeera Raita has cumin, mint and green chutney are green, chipotle orange, cheese sauce yellow, BBQ dark brown, honey mustard golden, sweet & sour translucent red, garlic sauce ivory, spicy mayo pale orange.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Family Raita",
+    "category": "Salad & Dips",
+    "slug": "family-raita",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Family Raita. One small ceramic serving bowl, or a larger bowl for Family Raita. Show precisely the named sauce or salad. Fresh Salad is sliced cucumber tomato onion; Kachumar finely diced cucumber tomato onion. Raita is white yogurt, Zeera Raita has cumin, mint and green chutney are green, chipotle orange, cheese sauce yellow, BBQ dark brown, honey mustard golden, sweet & sour translucent red, garlic sauce ivory, spicy mayo pale orange.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Raita",
+    "category": "Salad & Dips",
+    "slug": "raita",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Raita. One small ceramic serving bowl, or a larger bowl for Family Raita. Show precisely the named sauce or salad. Fresh Salad is sliced cucumber tomato onion; Kachumar finely diced cucumber tomato onion. Raita is white yogurt, Zeera Raita has cumin, mint and green chutney are green, chipotle orange, cheese sauce yellow, BBQ dark brown, honey mustard golden, sweet & sour translucent red, garlic sauce ivory, spicy mayo pale orange.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Sweet & Sour Sauce",
+    "category": "Salad & Dips",
+    "slug": "sweet-and-sour-sauce",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Sweet & Sour Sauce. One small ceramic serving bowl, or a larger bowl for Family Raita. Show precisely the named sauce or salad. Fresh Salad is sliced cucumber tomato onion; Kachumar finely diced cucumber tomato onion. Raita is white yogurt, Zeera Raita has cumin, mint and green chutney are green, chipotle orange, cheese sauce yellow, BBQ dark brown, honey mustard golden, sweet & sour translucent red, garlic sauce ivory, spicy mayo pale orange.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Zeera Raita",
+    "category": "Salad & Dips",
+    "slug": "zeera-raita",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Zeera Raita. One small ceramic serving bowl, or a larger bowl for Family Raita. Show precisely the named sauce or salad. Fresh Salad is sliced cucumber tomato onion; Kachumar finely diced cucumber tomato onion. Raita is white yogurt, Zeera Raita has cumin, mint and green chutney are green, chipotle orange, cheese sauce yellow, BBQ dark brown, honey mustard golden, sweet & sour translucent red, garlic sauce ivory, spicy mayo pale orange.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Green Chutney",
+    "category": "Salad & Dips",
+    "slug": "green-chutney",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Green Chutney. One small ceramic serving bowl, or a larger bowl for Family Raita. Show precisely the named sauce or salad. Fresh Salad is sliced cucumber tomato onion; Kachumar finely diced cucumber tomato onion. Raita is white yogurt, Zeera Raita has cumin, mint and green chutney are green, chipotle orange, cheese sauce yellow, BBQ dark brown, honey mustard golden, sweet & sour translucent red, garlic sauce ivory, spicy mayo pale orange.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Garlic Sauce Dip",
+    "category": "Salad & Dips",
+    "slug": "garlic-sauce-dip",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Garlic Sauce Dip. One small ceramic serving bowl, or a larger bowl for Family Raita. Show precisely the named sauce or salad. Fresh Salad is sliced cucumber tomato onion; Kachumar finely diced cucumber tomato onion. Raita is white yogurt, Zeera Raita has cumin, mint and green chutney are green, chipotle orange, cheese sauce yellow, BBQ dark brown, honey mustard golden, sweet & sour translucent red, garlic sauce ivory, spicy mayo pale orange.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Spicy Mayo Dip",
+    "category": "Salad & Dips",
+    "slug": "spicy-mayo-dip",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Spicy Mayo Dip. One small ceramic serving bowl, or a larger bowl for Family Raita. Show precisely the named sauce or salad. Fresh Salad is sliced cucumber tomato onion; Kachumar finely diced cucumber tomato onion. Raita is white yogurt, Zeera Raita has cumin, mint and green chutney are green, chipotle orange, cheese sauce yellow, BBQ dark brown, honey mustard golden, sweet & sour translucent red, garlic sauce ivory, spicy mayo pale orange.  Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Couple Platter",
+    "category": "Platters",
+    "slug": "couple-platter",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Couple Platter. A complete Pakistani sharing meal; carefully represent the exact contents in the description. Generous arranged platter with separate small bowls, breads and unbranded drinks. No unrelated food. Exact meal contents: Quarter sajji with rice, chicken tikka, chicken kabab, gulati kabab, 4 sada roti, 2 drinks (345 ml) and raita. Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Family Platter",
+    "category": "Platters",
+    "slug": "family-platter",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Family Platter. A complete Pakistani sharing meal; carefully represent the exact contents in the description. Generous arranged platter with separate small bowls, breads and unbranded drinks. No unrelated food. Exact meal contents: Half sajji with rice, chicken tikka, half chicken karahi, malai boti, 2 chicken kababs, 2 beef kababs, 8 roti, 4 mint raita, salad and a 1.5 litre drink. Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Friends Platter",
+    "category": "Platters",
+    "slug": "friends-platter",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Friends Platter. A complete Pakistani sharing meal; carefully represent the exact contents in the description. Generous arranged platter with separate small bowls, breads and unbranded drinks. No unrelated food. Exact meal contents: Half sajji with rice, 2 chicken tikka, 2 malai boti, 4 chicken kababs, leg piece, half chicken karahi, 8 roti, 4 mint raita, salad and a 1.5 litre drink. Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Budget Bite",
+    "category": "Deals",
+    "slug": "budget-bite",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Budget Bite. A fast-food meal combination containing exactly the foods listed in the description, neatly arranged with fries and unbranded drinks. Show the correct number of burgers and rolls. Exact meal contents: 1 Stuff Burger, regular fries and a 345 ml drink. Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Twin Burger Treat",
+    "category": "Deals",
+    "slug": "twin-burger-treat",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Twin Burger Treat. A fast-food meal combination containing exactly the foods listed in the description, neatly arranged with fries and unbranded drinks. Show the correct number of burgers and rolls. Exact meal contents: 2 Zinger Burgers, regular fries and 2 drinks (345 ml). Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Flavour Loaded Deal",
+    "category": "Deals",
+    "slug": "flavour-loaded-deal",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Flavour Loaded Deal. A fast-food meal combination containing exactly the foods listed in the description, neatly arranged with fries and unbranded drinks. Show the correct number of burgers and rolls. Exact meal contents: 1 Zinger Burger, 1 Double Dacker Burger, 1 Chicken Chattni Paratha Roll, regular fries and 2 drinks (345 ml). Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  },
+  {
+    "name": "Cheesy Crunch Combo",
+    "category": "Deals",
+    "slug": "cheesy-crunch-combo",
+    "status": "pending",
+    "prompt": "Use case: product-mockup. Asset: premium restaurant menu photograph. Subject: Cheesy Crunch Combo. A fast-food meal combination containing exactly the foods listed in the description, neatly arranged with fries and unbranded drinks. Show the correct number of burgers and rolls. Exact meal contents: 1 Stuff Burger, 1 Cheese Paratha Roll, 1 Crunchy Paratha Roll, regular fries and a 345 ml drink. Photorealistic professional food photography, appetizing freshly cooked textures, natural portions. Clean white tabletop and white plate where appropriate, a restrained red napkin at the edge, soft directional daylight, elegant three-quarter camera angle. Square composition, entire dish centered with generous margins, shallow but sufficient depth of field to keep the food sharp. High resolution with crisp food detail; no illustration, no collage, no people, no lettering, no logos, no watermark. The dish must visually match its exact name, with a distinct presentation for this specific product."
+  }
+]

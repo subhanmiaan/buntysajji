@@ -1,6 +1,6 @@
 # Verification report
 
-Verified against the supplied Supabase project `zqghhrkmignugbwqstjh` and a local Node server. The public theme was retained.
+Verified against the supplied Supabase project `zqghhrkmignugbwqstjh` and a local Node server. The simplified order desk and red-and-white theme were checked on October 7, 2026.
 
 ## Commands
 
@@ -8,7 +8,7 @@ Verified against the supplied Supabase project `zqghhrkmignugbwqstjh` and a loca
 - `npm run lint`: successful.
 - `npm run build`: successful; public output isolated in `dist/`.
 - `npm test`: both database/validation suites passed.
-- `npm run test:e2e`: hosted Supabase browser test passed, including the final paginated order-list implementation.
+- `npm run test:e2e`: hosted Supabase browser test passed, including the simplified order cards, details dialog, delivery and pickup actions, cash collection and mobile/desktop layouts.
 
 ## Real hosted flows exercised
 
@@ -44,7 +44,17 @@ Supabase advisors found no schema security/RLS warnings. The project-level Auth 
 
 Unused-index informational notices on the new order indexes are expected before production traffic. The duplicate permissive catalog-policy warnings were resolved in the second migration.
 
-## Not claimed as tested or enabled
+## Storefront and promotions update (October 9, 2026)
+
+The dark/light storefront, Bunty سجی branding, homepage controls, and promotions migration are implemented. The migration is applied to the configured Supabase project; the frontend has not been deployed as part of this update.
+
+- ESLint and both local and Vercel asset builds passed.
+- Four database/validation tests passed, including discount caps, invalid and expired codes, future dates, minimums, redemption limits, retry idempotency, saved discount history, and promotion access controls.
+- The new hosted browser test passed: homepage save, theme persistence, mobile overflow, reduced motion, voucher creation and application, rejection/removal, scheduling, editing and pausing offers. Countdown rendering uses an intercepted test response to avoid enabling a public discount during verification.
+- The existing hosted restaurant browser test passed: admin CRUD, upload, delivery/takeaway orders, status transitions, tracking, authorization, and mobile layouts.
+- Hosted checks encountered intermittent network latency; action/navigation timeouts allow for the remote Supabase service. Temporary test records are removed and settings restored.
+
+## Remaining operational limits
 
 - A public Hostinger deployment, DNS, HTTPS or restaurant staff workflow.
 - Easypaisa, JazzCash or card gateway processing.

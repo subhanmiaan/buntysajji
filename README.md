@@ -1,4 +1,13 @@
-# Bunty Sajji restaurant system
+# Bunty سجی restaurant system
+
+## Storefront customization and offers
+
+- **Admin → Homepage** controls the default dark/light theme, animation switch, announcement, hero headline, introduction, image URL, menu button label, featured dish count, and visibility of featured dishes, story, and deals. Visitors can save their own theme preference. Motion also respects the device's reduced-motion setting.
+- **Admin → Deals & vouchers** creates, edits, pauses, schedules, or deletes automatic deals and voucher codes. Choose percentage or fixed discounts, minimum food subtotal, optional maximum saving, start/end times, and total redemption limits. Admin dates use the timezone displayed beside the form; they are saved as UTC instants.
+- Automatic deals apply the greatest eligible saving. Entering a voucher replaces the automatic deal; promotions never stack. Savings exclude delivery charges. Delivery minimums use the food subtotal before discounts.
+- Limited-time offers appear on the homepage with countdowns during their scheduled period. No promotional prices or vouchers are enabled by default.
+- Checkout and order creation validate promotions in PostgreSQL. Redemption counts and orders commit together; retries do not redeem again. Cancelled orders still count as redemptions. Saved order discounts survive offer deletion.
+- Migration `20261009150014_storefront_promotions.sql` adds these settings, protected promotion records, and order discount history. Apply it when setting up another database; it has already been applied to the configured project.
 
 The original Punjabi truck-art website now uses a Node/Express API with Supabase PostgreSQL, Auth and Storage. It includes real admin management, persistent carts, delivery/takeaway checkout, cash payments and private order confirmation/tracking.
 
@@ -75,7 +84,9 @@ Hosted browser tests require working Supabase credentials and Chrome. They run r
 
 ## Deploy
 
-This version requires a **Node server**, not a static-only `public_html` upload. Run `npm run build`, then `npm start`. Build output `dist/` contains public files only; server code, migrations and secrets stay outside it. No Vercel services are used.
+The live site uses Vercel's Express framework and Supabase. `npm run build:vercel` copies browser assets into `public/`; Express serves the API and protected admin pages. See [VERCEL-SETUP.md](VERCEL-SETUP.md). Keep the Output Directory at the framework default, not `.` or `dist`.
+
+For a standalone Node host, run `npm run build`, then `npm start`. Server code, migrations and secrets must stay outside the public directory.
 
 `npm run package` prepares `release/server-app/` without secrets, node_modules or test artifacts. The old static ZIP is obsolete. See [LAUNCH.md](LAUNCH.md) and [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
@@ -86,7 +97,7 @@ This version requires a **Node server**, not a static-only `public_html` upload.
 - Scheduled pickup uses Pakistan time, allows preparation time and is limited to seven days ahead.
 - Order search is paginated across all records. Start with one Node process; multiple replicas require a shared rate-limit store.
 - Resolve missing fish prices, the duplicate Chicken Turkish Kabab entry and fries' “F.F.” portion before enabling them.
-- Existing PDF food photos have limited resolution. The public design is preserved.
+- Replacement AI dish photography is saved in `assets/food-ai/`. Exact dish prompts and generation status are tracked in `docs/food-image-manifest.json`; published Supabase image URLs are tracked in `docs/food-image-uploads.json`.
 - Enable Supabase leaked-password protection if supported by your plan: https://supabase.com/docs/guides/auth/password-security#password-strength-and-leaked-password-protection
 
 Payment-provider fields support later integration, but no Easypaisa, JazzCash or card gateway is active. The architecture document explains the shared API/database approach for future Flutter apps.

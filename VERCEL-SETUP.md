@@ -1,4 +1,9 @@
-# Restore live ordering on Vercel
+# Vercel ordering deployment
+
+The Express backend and production environment variables are configured on the
+existing `buntysajji` Vercel project. Live health, catalog, checkout quotes,
+admin authentication and logout have been verified. The steps below are for
+future deployments or restoring this setup.
 
 The old configuration published the repository as static files. `/api/catalog`
 returned HTML, so the website correctly fell back to the offline menu.
@@ -30,6 +35,10 @@ are served by Express. Do not set Output Directory to `.` or `dist`.
 - Existing owner email: `buntysajjiadmin@buntysajji.com`
 - Use the password chosen when that account was created. There is no default
   password and the website cannot display or retrieve it.
+
+After login, the order desk opens with **Active**, **New**, **Completed**, and
+**All orders** filters. Search by customer name, phone or order number. The
+cards show food items, phone, cash total and a single next-action button.
 
 Open an order and use **Accept order → Start cooking → Send for delivery / Ready
 for pickup → Cash received — complete**. Complete only after collecting cash.
