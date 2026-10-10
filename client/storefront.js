@@ -6,7 +6,7 @@ window.Storefront={
   const hero=document.querySelector('.hero');if(!hero)return;
   const title=hero.querySelector('h1');if(s.hero_title)title.textContent=s.hero_title;
   if(s.hero_subtitle)hero.querySelector('.hero-copy>p').textContent=s.hero_subtitle;
-  if(s.hero_image)hero.querySelector('.hero-dish').src=s.hero_image;
+  if(s.hero_image)window.setFoodImage(hero.querySelector('.hero-dish'),s.hero_image);
   if(s.button_label)hero.querySelector('.hero-buttons .button').textContent=s.button_label+' ↗';
   hero.querySelector('.hero-dish').alt='Signature roasted sajji served with rice';
   if(s.announcement){const banner=document.createElement('div');banner.className='announcement';banner.textContent=s.announcement;hero.before(banner);}

@@ -2,6 +2,8 @@
 
 ## Storefront customization and offers
 
+See [website readiness](docs/READINESS.md) for the slow-connection improvements, order-abuse controls, and remaining launch work. Admin **Order protection** manages confirmed abusive phone numbers. Order limits are shared through PostgreSQL; phone ownership is not yet verified by SMS.
+
 - **Admin → Homepage** controls the default dark/light theme, animation switch, announcement, hero headline, introduction, image URL, menu button label, featured dish count, and visibility of featured dishes, story, and deals. Visitors can save their own theme preference. Motion also respects the device's reduced-motion setting.
 - **Admin → Deals & vouchers** creates, edits, pauses, schedules, or deletes automatic deals and voucher codes. Choose percentage or fixed discounts, minimum food subtotal, optional maximum saving, start/end times, and total redemption limits. Admin dates use the timezone displayed beside the form; they are saved as UTC instants.
 - Automatic deals apply the greatest eligible saving. Entering a voucher replaces the automatic deal; promotions never stack. Savings exclude delivery charges. Delivery minimums use the food subtotal before discounts.
@@ -95,7 +97,7 @@ For a standalone Node host, run `npm run build`, then `npm start`. Server code, 
 - Add real delivery areas and charges before enabling delivery.
 - Hours are editable display text. Staff pause acceptance with the delivery/takeaway switches; automatic weekly-hours enforcement is not implemented.
 - Scheduled pickup uses Pakistan time, allows preparation time and is limited to seven days ahead.
-- Order search is paginated across all records. Start with one Node process; multiple replicas require a shared rate-limit store.
+- Order search is paginated across all records. Order-abuse limits are shared through PostgreSQL; other endpoint rate limits remain per process.
 - Resolve missing fish prices, the duplicate Chicken Turkish Kabab entry and fries' “F.F.” portion before enabling them.
 - Replacement AI dish photography is saved in `assets/food-ai/`. Exact dish prompts and generation status are tracked in `docs/food-image-manifest.json`; published Supabase image URLs are tracked in `docs/food-image-uploads.json`.
 - Enable Supabase leaked-password protection if supported by your plan: https://supabase.com/docs/guides/auth/password-security#password-strength-and-leaked-password-protection

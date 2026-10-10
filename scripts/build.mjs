@@ -11,3 +11,10 @@ console.log('Verified food photography and all six supplied menu sheets.');
 mkdirSync('dist',{recursive:true});
 for(const file of ['index.html','404.html','admin.html','app.js','menu-data.js','style.css','enhancements.css','punjabi-theme.css','system.css','brand-refresh.css','order-desk.css','storefront.css','assets','client','menu','about','gallery'])cpSync(file,`dist/${file}`,{recursive:true});
 console.log('Built dist/ for the Node server. Secrets, migrations and server code are outside the public directory.');
+// Serve a real homepage hero before the catalog request. Other routes keep a neutral loader.
+const photos=JSON.parse(readFileSync('assets/optimized/manifest.json','utf8'));
+const app=readFileSync('app.js','utf8');
+const hero=app.slice(app.indexOf('<section class="hero">'),app.indexOf('</section>${border}',app.indexOf('<section class="hero">'))+10)
+ .replace(/\$\{photo\("([^"]+)"\)\}/g,(_match,url)=>`src="${photos[url]?.src||url}" srcset="${photos[url]?.srcset||''}" sizes="(max-width:680px) 80vw, 45vw"`);
+writeFileSync('dist/shell.html',html);
+writeFileSync('dist/index.html',html.replace(/<section class="storefront-loading"[\s\S]*?<\/section>/,hero+'<p class="catalog-loading" role="status">Loading today\'s menu… You can explore the menu or call us while it loads.</p>'));

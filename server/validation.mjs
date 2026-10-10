@@ -3,6 +3,10 @@ const text=(max=160)=>z.string().trim().max(max);
 const money=z.number().finite().min(0).max(1000000).multipleOf(.01);
 const id=z.string().uuid();
 const optionalText=(max=500)=>text(max).default('');
+export const customerPhone=z.string().trim().max(25).transform(v=>{
+ const digits=v.replace(/[ ()-]/g,'').replace(/^\+/,'').replace(/^0092/,'92');
+ return digits.startsWith('03')?'92'+digits.slice(1):digits;
+}).refine(v=>/^923[0-9]{9}$/.test(v),'Enter a Pakistani mobile number, e.g. 0300 1234567');
 const imageUrl=z.string().max(2000).refine(v=>v===''||/^\/assets\/[a-zA-Z0-9/_.-]+$/.test(v)||/^https:\/\//.test(v),'Use a local asset or HTTPS image URL');
 export const cartSchema=z.object({
  voucher_code:z.string().trim().toUpperCase().max(40).regex(/^[A-Z0-9_-]*$/).default(''),
@@ -11,7 +15,8 @@ export const cartSchema=z.object({
  pickup_mode:z.enum(['asap','scheduled']).default('asap'),pickup_at:z.string().datetime({offset:true}).nullable().default(null)
 }).strict();
 export const orderSchema=cartSchema.extend({
- customer_name:text(100).min(2),phone:z.string().trim().regex(/^\+?[0-9 ()-]{7,25}$/,'Enter a valid phone number'),
+ customer_name:text(100).min(2),phone:customerPhone,
+ website:optionalText(200),
  address:optionalText(500),landmark:optionalText(200),instructions:optionalText(1000),
  request_key:id,tracking_token:z.string().regex(/^[a-f0-9]{64}$/),expected_total:money
 }).superRefine((v,c)=>{if(v.fulfillment==='delivery'&&(!v.zone_id||v.address.length<5))c.addIssue({code:'custom',message:'Delivery address and area are required'});if(v.fulfillment==='takeaway'&&v.pickup_mode==='scheduled'&&!v.pickup_at)c.addIssue({code:'custom',message:'Choose a pickup time'});});
@@ -24,6 +29,7 @@ export const settingsSchema=z.object({name:text(160).min(1),phone:text(30).min(7
 export const loginSchema=z.object({email:z.string().email().max(254),password:z.string().min(1).max(200)}).strict();
 export const statusSchema=z.object({status:z.enum(['confirmed','preparing','ready_for_pickup','out_for_delivery','completed','cancelled'])}).strict();
 export {id};
+export const blockedPhoneSchema=z.object({phone:customerPhone,reason:text(300).min(3)}).strict();
 export const homepageSchema=z.object({
  default_theme:z.enum(['dark','light']).default('dark'),animations:z.boolean().default(true),
  announcement:text(180).default('Fresh from the fire. Made for your mehfil.'),

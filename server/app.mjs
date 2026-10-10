@@ -8,6 +8,8 @@ import {createHash} from 'node:crypto';
 import {resolve} from 'node:path';
 import {AppError} from './supabase.mjs';
 import {homepageSchema,promotionSchema} from './validation.mjs';
+import {blockedPhoneSchema} from './validation.mjs';
+import {orderSecurity} from './order-security.mjs';
 import {cartSchema,orderSchema,menuSchema,categorySchema,zoneSchema,settingsSchema,loginSchema,statusSchema,id as idSchema} from './validation.mjs';
 
 const digest=value=>createHash('sha256').update(value).digest('hex');
@@ -21,6 +23,7 @@ export function createApp({services,env=process.env,publicDir=resolve('dist')}={
  app.get('/api/health',(_req,res)=>res.json({ok:true,configured:Boolean(services)}));
  app.use('/api',(_req,_res,next)=>services?next():next(new AppError('Ordering is not configured. Add the Supabase environment variables and run the database migrations.',503)));
  const repo=()=>services.repository();
+ const guard=orderSecurity(env);
  const cookieOptions={httpOnly:true,secure:production,sameSite:'strict',path:'/'};
  function setSession(res,session){res.cookie('bs_access',session.access_token,{...cookieOptions,maxAge:session.expires_in*1000});res.cookie('bs_refresh',session.refresh_token,{...cookieOptions,maxAge:7*86400000});}
  function clearSession(res){res.clearCookie('bs_access',cookieOptions);res.clearCookie('bs_refresh',cookieOptions);}
@@ -28,13 +31,28 @@ export function createApp({services,env=process.env,publicDir=resolve('dist')}={
  app.post('/api/auth/login',limit(10,15*60000),async(req,res)=>{const input=loginSchema.parse(req.body);const session=await services.auth.login(input.email,input.password);try{const verified=await services.auth.verify(session.access_token,session.refresh_token);setSession(res,session);res.json({email:verified.user.email,role:verified.profile.role});}catch(e){await services.auth.logout(session.access_token);throw e;}});
  app.post('/api/auth/logout',async(req,res)=>{await services.auth.logout(req.cookies.bs_access);clearSession(res);res.json({ok:true});});
  app.get('/api/auth/me',requireAdmin,(req,res)=>res.json({email:req.admin.user.email,role:req.admin.profile.role}));
- app.get('/api/catalog',async(_req,res)=>res.json(await repo().catalog()));
+ let cachedCatalog=null,catalogUntil=0,catalogPending=null;
+ app.get('/api/catalog',async(_req,res)=>{
+  if(!cachedCatalog||Date.now()>catalogUntil){if(!catalogPending)catalogPending=repo().catalog().then(data=>{cachedCatalog=data;catalogUntil=Date.now()+10000;return data;}).finally(()=>{catalogPending=null;});await catalogPending;}
+  res.set('Cache-Control','public, max-age=0, must-revalidate');res.json(cachedCatalog);
+ });
  app.get('/api/deals',async(_req,res)=>res.json(await repo().deals()));
  app.post('/api/quote',limit(90,60000),async(req,res)=>res.json(await repo().quote(cartSchema.parse(req.body))));
- app.post('/api/orders',limit(10,15*60000),async(req,res)=>{const input=orderSchema.parse(req.body);const {tracking_token,...payload}=input;const result=await repo().createOrder(payload,digest(tracking_token),digest(JSON.stringify(payload)));res.status(201).json(result);});
+ app.get('/api/checkout-session',limit(30,10*60000),(_req,res)=>{res.cookie('bs_checkout',guard.issue(),{httpOnly:true,secure:production,sameSite:'strict',path:'/api',maxAge:2*3600000});res.json({ok:true});});
+ app.post('/api/orders',limit(20,15*60000),async(req,res)=>{
+  const network=guard.network(req);if(!await repo().orderAttempt(network)){res.set('Retry-After','600');throw new AppError('Too many order attempts. Please wait 10 minutes or call the restaurant.',429);}
+  guard.verify(req.cookies.bs_checkout);
+  const {tracking_token,website,...payload}=orderSchema.parse(req.body);
+  if(website)throw new AppError('Unable to accept this request. Please call the restaurant.',400);
+  const result=await repo().createGuardedOrder(payload,digest(tracking_token),digest(JSON.stringify(payload)),network);res.status(201).json(result);
+ });
  app.get('/api/orders/:number',limit(120,60000),async(req,res)=>{if(!/^BS-\d{4,}$/.test(req.params.number))throw new AppError('Order not found.',404);const token=(req.get('authorization')||'').replace(/^Bearer /,'');if(!/^[a-f0-9]{64}$/.test(token))throw new AppError('A private tracking link is required.',401);const result=await repo().track(req.params.number,digest(token));if(!result)throw new AppError('Order not found or tracking link is invalid.',404);res.json(result);});
  app.use('/api/admin',requireAdmin);
+ app.use('/api/admin',(req,_res,next)=>{if(!['GET','HEAD'].includes(req.method))catalogUntil=0;next();});
  app.get('/api/admin/catalog',async(req,res)=>res.json(await req.repository.catalog()));
+ app.get('/api/admin/blocked-phones',async(req,res)=>res.json(await req.repository.list('blocked_phones')));
+ app.post('/api/admin/blocked-phones',async(req,res)=>res.json(await req.repository.save('blocked_phones',null,blockedPhoneSchema.parse(req.body))));
+ app.delete('/api/admin/blocked-phones/:id',async(req,res)=>{await req.repository.remove('blocked_phones',idSchema.parse(req.params.id));res.json({ok:true});});
  app.get('/api/admin/orders',async(req,res)=>{const page=Number(req.query.page||1),status=req.query.status||'',search=req.query.search||'';if(!Number.isInteger(page)||page<1||page>100000||typeof search!=='string'||search.length>100||!/^[\p{L}\p{N} +'-]*$/u.test(search)||!['','active','new','confirmed','preparing','ready_for_pickup','out_for_delivery','completed','cancelled'].includes(status))throw new AppError('Invalid order filter. Use a name, phone or order number.');res.json(await req.repository.orders({page,status,search}));});
  app.get('/api/admin/order-summary',async(req,res)=>res.json({open_orders:await req.repository.openOrderCount()}));
  app.get('/api/admin/orders/:id',async(req,res)=>{const record=await req.repository.order(idSchema.parse(req.params.id));if(!record)throw new AppError('Order not found.',404);delete record.tracking_token_hash;delete record.request_fingerprint;res.json(record);});
@@ -50,15 +68,16 @@ export function createApp({services,env=process.env,publicDir=resolve('dist')}={
  app.put('/api/admin/settings',async(req,res)=>res.json(await req.repository.save('restaurant_settings',1,settingsSchema.parse(req.body))));
  app.put('/api/admin/homepage',async(req,res)=>res.json(await req.repository.save('restaurant_settings',1,{homepage:homepageSchema.parse(req.body)})));
  const upload=multer({storage:multer.memoryStorage(),limits:{fileSize:5*1024*1024,files:1}});
- app.post('/api/admin/upload',upload.single('image'),async(req,res)=>{if(!req.file)throw new AppError('Choose a photo.');if(!['image/jpeg','image/png','image/webp'].includes(req.file.mimetype))throw new AppError('Upload a JPEG, PNG or WebP image.');let bytes;try{bytes=await sharp(req.file.buffer,{limitInputPixels:24000000}).rotate().resize({width:1600,height:1600,fit:'inside',withoutEnlargement:true}).webp({quality:85}).toBuffer();}catch{throw new AppError('The file is not a valid supported image.');}res.json({url:await services.upload(req.admin.token,bytes)});});
+ app.post('/api/admin/upload',upload.single('image'),async(req,res)=>{if(!req.file)throw new AppError('Choose a photo.');if(!['image/jpeg','image/png','image/webp'].includes(req.file.mimetype))throw new AppError('Upload a JPEG, PNG or WebP image.');let bytes;try{bytes=await sharp(req.file.buffer,{limitInputPixels:24000000}).rotate().resize({width:960,height:960,fit:'inside',withoutEnlargement:true}).webp({quality:74}).toBuffer();}catch{throw new AppError('The file is not a valid supported image.');}res.json({url:await services.upload(req.admin.token,bytes)});});
  app.use('/api',(_req,res)=>res.status(404).json({error:'Endpoint not found.'}));
  app.use('/admin',(_req,res,next)=>{res.set('Cache-Control','no-store');next();});
  app.get('/admin/login',(_req,res)=>res.sendFile(resolve(publicDir,'admin.html')));
  // Check authentication before sending any protected admin page, not just its API.
- app.get(['/admin','/admin/','/admin/orders','/admin/menu','/admin/categories','/admin/delivery-zones','/admin/settings','/admin/homepage','/admin/promotions'],async(req,res)=>{if(!services)return res.redirect('/admin/login');try{const session=await services.auth.verify(req.cookies.bs_access,req.cookies.bs_refresh);if(session.session)setSession(res,session.session);res.sendFile(resolve(publicDir,'admin.html'));}catch{return res.redirect('/admin/login');}});
- app.get(['/checkout','/checkout/','/order/:number'],(_req,res)=>{res.set('Cache-Control','no-store');res.sendFile(resolve(publicDir,'index.html'));});
+ app.get(['/admin','/admin/','/admin/orders','/admin/menu','/admin/categories','/admin/delivery-zones','/admin/settings','/admin/homepage','/admin/promotions','/admin/security'],async(req,res)=>{if(!services)return res.redirect('/admin/login');try{const session=await services.auth.verify(req.cookies.bs_access,req.cookies.bs_refresh);if(session.session)setSession(res,session.session);res.sendFile(resolve(publicDir,'admin.html'));}catch{return res.redirect('/admin/login');}});
+ app.get(['/checkout','/checkout/','/order/:number'],(_req,res)=>{res.set('Cache-Control','no-store');res.sendFile(resolve(publicDir,'shell.html'));});
  app.get('/admin.html',(_req,res)=>res.redirect('/admin'));
- app.get(['/', '/menu', '/menu/', '/about', '/about/', '/gallery', '/gallery/'],(_req,res)=>res.sendFile(resolve(publicDir,'index.html')));
+ app.get('/',(_req,res)=>res.sendFile(resolve(publicDir,'index.html')));
+ app.get(['/menu','/menu/','/about','/about/','/gallery','/gallery/'],(req,res)=>res.sendFile(resolve(publicDir,req.path.split('/')[1],'index.html')));
  app.use(express.static(publicDir,{dotfiles:'ignore',maxAge:0}));
  app.use((_req,res)=>res.status(404).sendFile(resolve(publicDir,'404.html')));
  app.use((error,_req,res,_next)=>{if(error.name==='ZodError')return res.status(400).json({error:error.issues.map(i=>`${i.path.join('.')}: ${i.message}`).join('; ')});if(error.code==='LIMIT_FILE_SIZE')return res.status(400).json({error:'Photo must be under 5 MB.'});if(error.type==='entity.parse.failed')return res.status(400).json({error:'Invalid JSON.'});if(!error.status)console.error('Request failed:',error.name,error.code||'');res.status(error.status||500).json({error:error.status?error.message:'Something went wrong. Please try again.'});});

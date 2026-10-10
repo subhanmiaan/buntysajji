@@ -1,5 +1,14 @@
 # Verification report
 
+## Slow connections and order protection (October 10, 2026)
+
+- Seven Node/database/HTTP tests passed, covering signed checkout sessions, phone normalization, trusted network handling, shared limits, blocklists, safe retries, pricing, promotions and access control.
+- ESLint and the Vercel production asset build passed.
+- Browser checks cover delayed/failed catalog requests, image fallback, throttled networking, early navigation and bag controls, no external font requests, and layouts from 360px to 1440px.
+- Hosted Supabase checks cover delivery/takeaway orders, upload, tracking, admin management, homepage customization, vouchers and phone block/unblock controls. QA records are removed afterward.
+- Migration `20261010110605_order_abuse_controls.sql` is applied to the configured database. Private abuse tables intentionally deny all client access; service-only routines enforce shared limits.
+- Current remaining work is tracked in [READINESS.md](READINESS.md). Older deployment and per-process order-limit notes below describe previous releases.
+
 Verified against the supplied Supabase project `zqghhrkmignugbwqstjh` and a local Node server. The simplified order desk and red-and-white theme were checked on October 7, 2026.
 
 ## Commands
