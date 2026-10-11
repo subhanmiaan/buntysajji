@@ -1,4 +1,18 @@
 import {test,expect} from '@playwright/test';
+test('old page asset URLs recover after a deployment',async({page,request})=>{
+ const response=await request.get('/');
+ expect(response.headers()['cache-control']).toBe('no-store');
+ const staleHtml=(await response.text()).replace(/\/assets\/bundles\/storefront\.(css|js)\?v=[a-f0-9]+/g,'/assets/bundles/storefront-0000000000000000.$1');
+ await page.route('http://127.0.0.1:3100/',route=>route.fulfill({contentType:'text/html',body:staleHtml}));
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('/',{waitUntil:'networkidle'});
+ await expect(page.locator('.hero h1')).toBeVisible();
+ expect(await page.evaluate(()=>getComputedStyle(document.body).margin)).toBe('0px');
+ expect(await page.evaluate(()=>typeof window.Bunty)).toBe('object');
+ await expect(page.locator('#script-failure')).toHaveCount(0);
+ expect(errors).toEqual([]);
+});
+
 test('homepage and header work before a delayed catalog; image failure has a fallback',async({page})=>{
  let release;const hold=new Promise(resolve=>{release=resolve;});const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.route('**/api/catalog',async route=>{await hold;await route.fulfill({status:503,json:{error:'Connection unavailable'}});});
@@ -14,7 +28,7 @@ test('homepage and header work before a delayed catalog; image failure has a fal
 
 test('failed storefront script offers retry and keeps the footer below the main content',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
- await page.route('**/assets/bundles/*.js',route=>route.abort());
+ await page.route(/\/assets\/bundles\/.*\.js(?:\?.*)?$/,route=>route.abort());
  await page.goto('/menu/',{waitUntil:'domcontentloaded'});
  await expect(page.locator('#script-failure')).toContainText('RETRY CONNECTION');
  expect(await page.locator('#visit').evaluate(el=>el.getBoundingClientRect().top)).toBeGreaterThan(600);

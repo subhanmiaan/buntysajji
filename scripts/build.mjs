@@ -25,7 +25,7 @@ writeFileSync('dist/index.html',html.replace(/<section class="storefront-loading
 mkdirSync('dist/assets/bundles',{recursive:true});
 const styles=[...html.matchAll(/<link rel="stylesheet" href="([^"]+)">/g)];
 const scripts=[...html.matchAll(/<script src="([^"]+)" defer><\/script>/g)].filter(m=>m[1]!=='/client/shell.js');
-const bundle=(matches,extension)=>{const content=matches.map(m=>readFileSync(m[1].slice(1),'utf8')).join(extension==='js'?'\n;\n':'\n');const name=`storefront-${createHash('sha256').update(content).digest('hex').slice(0,16)}.${extension}`;writeFileSync('dist/assets/bundles/'+name,content);return '/assets/bundles/'+name;};
+const bundle=(matches,extension)=>{const content=matches.map(m=>readFileSync(m[1].slice(1),'utf8')).join(extension==='js'?'\n;\n':'\n');const version=createHash('sha256').update(content).digest('hex').slice(0,16);const name=`storefront.${extension}`;writeFileSync('dist/assets/bundles/'+name,content);return '/assets/bundles/'+name+'?v='+version;};
 const css=bundle(styles,'css'),js=bundle(scripts,'js');
 for(const path of ['index.html','shell.html','404.html','menu/index.html','about/index.html','gallery/index.html']){
  let page=readFileSync('dist/'+path,'utf8');
