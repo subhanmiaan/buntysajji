@@ -21,7 +21,7 @@ const hero=app.slice(app.indexOf('<section class="hero">'),app.indexOf('</sectio
 writeFileSync('dist/shell.html',html);
 const initialPages=prerenderPages({app,data,photos});
 for(const [path,body] of Object.entries(initialPages)){
- const page=existsSync('dist/'+path)?readFileSync('dist/'+path,'utf8'):html;
+ const page=['checkout.html','order.html'].includes(path)?html:readFileSync('dist/'+path,'utf8');
  writeFileSync('dist/'+path,page.replace(/<main id="main">[\s\S]*?<\/main>/,`<main id="main">${body}</main>`));
 }
 writeFileSync('dist/index.html',html.replace(/<section class="storefront-loading"[\s\S]*?<\/section>/,hero+'<section class="catalog-placeholder" aria-label="Menu loading"><p class="catalog-loading" role="status">Loading today\'s menu… You can explore the menu or call us while it loads.</p><div class="food-grid" aria-hidden="true"><div></div><div></div><div></div></div></section>'));
@@ -30,7 +30,7 @@ writeFileSync('dist/index.html',html.replace(/<section class="storefront-loading
 // Content hashes prevent browsers reusing stale code after a deployment.
 mkdirSync('dist/assets/bundles',{recursive:true});
 const styles=[...html.matchAll(/<link rel="stylesheet" href="([^"]+)">/g)];
-const scripts=[...html.matchAll(/<script src="([^"]+)" defer><\/script>/g)].filter(m=>m[1]!=='/client/shell.js');
+const scripts=[...html.matchAll(/<script src="([^"]+)" defer><\/script>/g)].filter(m=>!['/client/shell.js','/client/language.js'].includes(m[1]));
 const bundle=(matches,extension)=>{const content=matches.map(m=>readFileSync(m[1].slice(1),'utf8')).join(extension==='js'?'\n;\n':'\n');const version=createHash('sha256').update(content).digest('hex').slice(0,16);const name=`storefront.${extension}`;writeFileSync('dist/assets/bundles/'+name,content);return '/assets/bundles/'+name+'?v='+version;};
 const css=bundle(styles,'css'),js=bundle(scripts,'js');
 for(const path of ['index.html','shell.html',...Object.keys(initialPages)]){
