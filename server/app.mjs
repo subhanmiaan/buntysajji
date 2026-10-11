@@ -78,7 +78,7 @@ export function createApp({services,env=process.env,publicDir=resolve('dist'),fe
  app.get('/admin/login',(_req,res)=>res.sendFile(resolve(publicDir,'admin.html')));
  // Check authentication before sending any protected admin page, not just its API.
  app.get(['/admin','/admin/','/admin/orders','/admin/menu','/admin/categories','/admin/delivery-zones','/admin/settings','/admin/homepage','/admin/promotions','/admin/security'],async(req,res)=>{if(!services)return res.redirect('/admin/login');try{const session=await services.auth.verify(req.cookies.bs_access,req.cookies.bs_refresh);if(session.session)setSession(res,session.session);res.sendFile(resolve(publicDir,'admin.html'));}catch{return res.redirect('/admin/login');}});
- app.get(['/checkout','/checkout/','/order/:number'],(_req,res)=>{res.set('Cache-Control','no-store');res.sendFile(resolve(publicDir,'shell.html'));});
+ app.get(['/checkout','/checkout/','/order/:number'],(req,res)=>{res.set('Cache-Control','no-store');res.sendFile(resolve(publicDir,req.path.startsWith('/order/')?'order.html':'checkout.html'));});
  app.get('/admin.html',(_req,res)=>res.redirect('/admin'));
  app.get('/',(_req,res)=>{res.set('Cache-Control','no-store');res.sendFile(resolve(publicDir,'index.html'));});
  app.get(['/menu','/menu/','/about','/about/','/gallery','/gallery/'],(req,res)=>{res.set('Cache-Control','no-store');res.sendFile(resolve(publicDir,req.path.split('/')[1],'index.html'));});

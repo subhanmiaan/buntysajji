@@ -1,4 +1,24 @@
 import {test,expect} from '@playwright/test';
+for(const [path,content] of [['/menu/','.food-card'],['/about/','.story-copy'],['/gallery/','.gallery-card'],['/checkout','.catalog-placeholder'],['/order/loading-test','.catalog-placeholder']]){
+ test(`${path} has main content before JavaScript loads`,async({browser})=>{
+  const context=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}});
+  const page=await context.newPage();
+  await page.goto('http://127.0.0.1:3100'+path,{waitUntil:'domcontentloaded'});
+  await expect(page.locator('#main h1')).toBeVisible();
+  await expect(page.locator(content).first()).toBeVisible();
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  expect(await page.locator('#main').evaluate(el=>el.getBoundingClientRect().height)).toBeGreaterThan(500);
+  await context.close();
+ });
+ test(`${path} stays populated while catalog is delayed`,async({page})=>{
+  let release;const hold=new Promise(resolve=>{release=resolve;});
+  await page.route('**/api/catalog',async route=>{await hold;await route.fulfill({status:503,json:{error:'Connection unavailable'}});});
+  await page.goto(path,{waitUntil:'domcontentloaded'});
+  await expect(page.locator('#main h1')).toBeVisible();await expect(page.locator(content).first()).toBeVisible();
+  release();await expect(page.locator('[data-retry]').first()).toBeVisible();
+ });
+}
+
 test('old page asset URLs recover after a deployment',async({page,request})=>{
  const response=await request.get('/');
  expect(response.headers()['cache-control']).toBe('no-store');
