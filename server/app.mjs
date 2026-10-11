@@ -17,6 +17,10 @@ const digest=value=>createHash('sha256').update(value).digest('hex');
 export function createApp({services,env=process.env,publicDir=resolve('dist'),fetcher=fetch}={}){
  const app=express(),production=env.NODE_ENV==='production';
  app.disable('x-powered-by');if(env.TRUST_PROXY_HOPS)app.set('trust proxy',Number(env.TRUST_PROXY_HOPS));
+ const publicOrigin=new URL(env.APP_URL||'https://buntysajji.vercel.app').origin;
+ app.get('/robots.txt',(_req,res)=>res.type('text/plain').send(`User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /api/\nDisallow: /checkout\nDisallow: /order/\nSitemap: ${publicOrigin}/sitemap.xml\n`));
+ app.get('/sitemap.xml',(_req,res)=>res.type('application/xml').send(`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${['/','/menu/','/about/','/gallery/'].map(path=>`<url><loc>${publicOrigin}${path}</loc></url>`).join('')}</urlset>`));
+ app.use(['/admin','/checkout','/order'],(_req,res,next)=>{res.set('X-Robots-Tag','noindex, nofollow');next();});
  app.use(helmet({contentSecurityPolicy:{directives:{defaultSrc:["'self'"],scriptSrc:["'self'",'https://challenges.cloudflare.com'],styleSrc:["'self'",'https://fonts.googleapis.com'],fontSrc:["'self'",'https://fonts.gstatic.com'],imgSrc:["'self'",'data:','https:'],connectSrc:["'self'",'https://challenges.cloudflare.com'],frameSrc:["'self'",'https://challenges.cloudflare.com'],upgradeInsecureRequests:production?[]:null}},referrerPolicy:{policy:'no-referrer'}}));
  app.use(express.json({limit:'100kb'}),cookieParser());
  app.use('/api',(req,res,next)=>{res.set('Cache-Control','no-store');if(!['GET','HEAD','OPTIONS'].includes(req.method)){const expected=env.APP_URL?new URL(env.APP_URL).origin:`${req.protocol}://${req.get('host')}`;if(req.get('origin')!==expected)return res.status(403).json({error:'Request origin is not allowed.'});}next();});
