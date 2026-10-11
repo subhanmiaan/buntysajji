@@ -1,5 +1,7 @@
 'use strict';
 (()=>{
+ window.showStorefrontFailure=()=>{if(document.querySelector('#script-failure'))return;const note=document.createElement('p');note.id='script-failure';note.className='setup-notice';note.setAttribute('role','alert');note.innerHTML='Part of the website could not load. Your saved bag is safe. <button type="button" data-retry>RETRY CONNECTION</button> or <a href="tel:0523242312">call to order</a>.';document.querySelector('#main')?.prepend(note);document.querySelector('.storefront-loading')?.remove();};
+ document.addEventListener('error',event=>{if(event.target instanceof HTMLScriptElement)window.showStorefrontFailure();},true);
  const toggle=document.querySelector('.mobile-toggle'),nav=document.querySelector('header nav');
  if(toggle&&nav){toggle.onclick=()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);};document.addEventListener('keydown',event=>{if(event.key==='Escape'){toggle.setAttribute('aria-expanded','false');nav.classList.remove('open');}});}
  const bag=document.querySelector('[data-bag]');if(bag)bag.onclick=()=>{if(!window.publicReady){const d=document.querySelector('#bag-dialog');document.querySelector('#bag-content').innerHTML='<p>The menu is still loading. Your saved bag is safe.</p><a class="button" href="/checkout">GO TO CHECKOUT</a>';d.showModal();}};

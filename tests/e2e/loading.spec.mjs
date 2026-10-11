@@ -12,6 +12,15 @@ test('homepage and header work before a delayed catalog; image failure has a fal
  release();await expect(page.locator('[data-retry]')).toBeVisible();expect(errors).toEqual([]);
 });
 
+test('failed storefront script offers retry and keeps the footer below the main content',async({page})=>{
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.route('**/assets/bundles/*.js',route=>route.abort());
+ await page.goto('/menu/',{waitUntil:'domcontentloaded'});
+ await expect(page.locator('#script-failure')).toContainText('RETRY CONNECTION');
+ expect(await page.locator('#visit').evaluate(el=>el.getBoundingClientRect().top)).toBeGreaterThan(600);
+ await page.locator('[data-bag]').click();await expect(page.locator('#bag-dialog')).toBeVisible();expect(errors).toEqual([]);
+});
+
 test('slow connection shows the homepage without waiting for the API',async({page})=>{
  const cdp=await page.context().newCDPSession(page);await cdp.send('Network.enable');await cdp.send('Network.emulateNetworkConditions',{offline:false,latency:400,downloadThroughput:150*1024,uploadThroughput:50*1024});
  await page.route('**/api/catalog',route=>route.fulfill({status:503,json:{error:'Offline test'}}));

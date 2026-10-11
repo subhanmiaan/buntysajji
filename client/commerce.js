@@ -1,6 +1,6 @@
 'use strict';
 window.Commerce=(()=>{
- const B=window.Bunty,e=B.escape,m=B.money;
+ const B=window.Bunty;if(!B)return null;const e=B.escape,m=B.money;
  function lines(){return B.entries().map(x=>`<div class="checkout-line"><div><strong>${e(x.item?.name||'Removed dish')}</strong><p>${e(x.variant?.name||'Unavailable portion')}${x.addons.length?' · '+x.addons.map(a=>e(a?.name||'Removed add-on')).join(', '):''}</p>${!x.available?'<p class="form-error">Unavailable: remove this selection.</p>':''}<div class="quantity"><button type="button" data-check-qty="${x.index}" data-delta="-1" aria-label="Decrease quantity">−</button><span>${x.quantity}</span><button type="button" data-check-qty="${x.index}" data-delta="1" aria-label="Increase quantity">+</button><button type="button" data-check-remove="${x.index}">Remove</button></div></div><strong>${m(x.total)}</strong></div>`).join('');}
  function newToken(){return Array.from(crypto.getRandomValues(new Uint8Array(32)),n=>n.toString(16).padStart(2,'0')).join('');}
  async function checkout(){

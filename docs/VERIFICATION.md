@@ -1,5 +1,11 @@
 # Verification report
 
+## Initial-page visibility follow-up (October 11, 2026)
+
+The homepage includes its hero and a menu placeholder in the initial response. The main area reserves the viewport while data loads, so the footer cannot jump under the header. Hero text no longer fades in from invisible. Public styles and deferred application scripts are combined into two content-versioned files, while the small theme and navigation scripts remain independent. Script-download failures show a retry message and retain access to the saved bag.
+
+Browser coverage includes a blocked application download and delayed catalog responses. The existing production deployment was also checked for mobile layout, working menu/checkout, secure checkout cookies, rejection of orders without a checkout session, and protected admin access.
+
 ## Slow connections and order protection (October 10, 2026)
 
 - Seven Node/database/HTTP tests passed, covering signed checkout sessions, phone normalization, trusted network handling, shared limits, blocklists, safe retries, pricing, promotions and access control.
