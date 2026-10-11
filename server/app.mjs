@@ -10,13 +10,14 @@ import {AppError} from './supabase.mjs';
 import {homepageSchema,promotionSchema} from './validation.mjs';
 import {blockedPhoneSchema} from './validation.mjs';
 import {orderSecurity} from './order-security.mjs';
+import {turnstile} from './turnstile.mjs';
 import {cartSchema,orderSchema,menuSchema,categorySchema,zoneSchema,settingsSchema,loginSchema,statusSchema,id as idSchema} from './validation.mjs';
 
 const digest=value=>createHash('sha256').update(value).digest('hex');
-export function createApp({services,env=process.env,publicDir=resolve('dist')}={}){
+export function createApp({services,env=process.env,publicDir=resolve('dist'),fetcher=fetch}={}){
  const app=express(),production=env.NODE_ENV==='production';
  app.disable('x-powered-by');if(env.TRUST_PROXY_HOPS)app.set('trust proxy',Number(env.TRUST_PROXY_HOPS));
- app.use(helmet({contentSecurityPolicy:{directives:{defaultSrc:["'self'"],scriptSrc:["'self'"],styleSrc:["'self'",'https://fonts.googleapis.com'],fontSrc:["'self'",'https://fonts.gstatic.com'],imgSrc:["'self'",'data:','https:'],connectSrc:["'self'"],upgradeInsecureRequests:production?[]:null}},referrerPolicy:{policy:'no-referrer'}}));
+ app.use(helmet({contentSecurityPolicy:{directives:{defaultSrc:["'self'"],scriptSrc:["'self'",'https://challenges.cloudflare.com'],styleSrc:["'self'",'https://fonts.googleapis.com'],fontSrc:["'self'",'https://fonts.gstatic.com'],imgSrc:["'self'",'data:','https:'],connectSrc:["'self'",'https://challenges.cloudflare.com'],frameSrc:["'self'",'https://challenges.cloudflare.com'],upgradeInsecureRequests:production?[]:null}},referrerPolicy:{policy:'no-referrer'}}));
  app.use(express.json({limit:'100kb'}),cookieParser());
  app.use('/api',(req,res,next)=>{res.set('Cache-Control','no-store');if(!['GET','HEAD','OPTIONS'].includes(req.method)){const expected=env.APP_URL?new URL(env.APP_URL).origin:`${req.protocol}://${req.get('host')}`;if(req.get('origin')!==expected)return res.status(403).json({error:'Request origin is not allowed.'});}next();});
  const limit=(max,windowMs)=>rateLimit({windowMs,limit:max,standardHeaders:'draft-8',legacyHeaders:false,message:{error:'Too many requests. Please try again shortly.'}});
@@ -24,6 +25,7 @@ export function createApp({services,env=process.env,publicDir=resolve('dist')}={
  app.use('/api',(_req,_res,next)=>services?next():next(new AppError('Ordering is not configured. Add the Supabase environment variables and run the database migrations.',503)));
  const repo=()=>services.repository();
  const guard=orderSecurity(env);
+ const botCheck=turnstile(env,{fetcher});
  const cookieOptions={httpOnly:true,secure:production,sameSite:'strict',path:'/'};
  function setSession(res,session){res.cookie('bs_access',session.access_token,{...cookieOptions,maxAge:session.expires_in*1000});res.cookie('bs_refresh',session.refresh_token,{...cookieOptions,maxAge:7*86400000});}
  function clearSession(res){res.clearCookie('bs_access',cookieOptions);res.clearCookie('bs_refresh',cookieOptions);}
@@ -38,10 +40,12 @@ export function createApp({services,env=process.env,publicDir=resolve('dist')}={
  });
  app.get('/api/deals',async(_req,res)=>res.json(await repo().deals()));
  app.post('/api/quote',limit(90,60000),async(req,res)=>res.json(await repo().quote(cartSchema.parse(req.body))));
- app.get('/api/checkout-session',limit(30,10*60000),(_req,res)=>{res.cookie('bs_checkout',guard.issue(),{httpOnly:true,secure:production,sameSite:'strict',path:'/api',maxAge:2*3600000});res.json({ok:true});});
+ app.get('/api/checkout-session',limit(30,10*60000),(req,res)=>{res.cookie('bs_checkout',guard.issue(),{httpOnly:true,secure:production,sameSite:'strict',path:'/api',maxAge:2*3600000});res.json({ok:true,turnstile_site_key:botCheck.siteKey,human_verified:botCheck.enabled&&guard.verifyHuman(req.cookies.bs_human)});});
+ app.post('/api/turnstile-check',limit(20,10*60000),async(req,res)=>{if(!botCheck.enabled)throw new AppError('Security check is not enabled.',404);guard.verify(req.cookies.bs_checkout);if(guard.verifyHuman(req.cookies.bs_human))return res.json({ok:true,reused:true});await botCheck.verify(req.body?.token);res.cookie('bs_human',guard.issueHuman(),{httpOnly:true,secure:production,sameSite:'strict',path:'/api',maxAge:10*60000});res.json({ok:true});});
  app.post('/api/orders',limit(20,15*60000),async(req,res)=>{
   const network=guard.network(req);if(!await repo().orderAttempt(network)){res.set('Retry-After','600');throw new AppError('Too many order attempts. Please wait 10 minutes or call the restaurant.',429);}
   guard.verify(req.cookies.bs_checkout);
+  if(botCheck.enabled&&!guard.verifyHuman(req.cookies.bs_human))throw new AppError('Complete the security check before placing your order.',403);
   const {tracking_token,website,...payload}=orderSchema.parse(req.body);
   if(website)throw new AppError('Unable to accept this request. Please call the restaurant.',400);
   const result=await repo().createGuardedOrder(payload,digest(tracking_token),digest(JSON.stringify(payload)),network);res.status(201).json(result);

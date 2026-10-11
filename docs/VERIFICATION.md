@@ -1,5 +1,11 @@
 # Verification report
 
+## Free WhatsApp confirmation and Turnstile (October 11, 2026)
+
+Customer tracking now creates a prefilled WhatsApp confirmation addressed to the restaurant while an order is new. The order desk warns staff to match the incoming sender number before accepting the order. This workflow was verified for both delivery and takeaway against hosted Supabase.
+
+Optional Cloudflare Turnstile protection validates every challenge on the server, checks the `order` action, and issues an HttpOnly, SameSite signed cookie for ten minutes so safe order retries do not reuse a one-time Turnstile token. Automated coverage uses Cloudflare's official passing test keys; production remains disabled until real site and secret keys are configured in Vercel.
+
 ## Initial-page visibility follow-up (October 11, 2026)
 
 The homepage includes its hero and a menu placeholder in the initial response. The main area reserves the viewport while data loads, so the footer cannot jump under the header. Hero text no longer fades in from invisible. Public styles and deferred application scripts are combined into two content-versioned files, while the small theme and navigation scripts remain independent. Script-download failures show a retry message and retain access to the saved bag.

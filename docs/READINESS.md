@@ -8,6 +8,8 @@
 - Local fonts with optional loading, a homepage hero in the initial HTML, early navigation/bag controls, stable tablet/mobile layout, request timeouts, retry messaging, image fallbacks, and content that remains visible without entrance animations.
 - Menu prices and promotions are revalidated at checkout. Mutating requests are never automatically retried. A failed order response preserves the same idempotency key and private tracking token for a safe manual retry.
 - Shared order-attempt limits in PostgreSQL, a signed checkout session, a hidden bot-trap field, canonical Pakistani mobile numbers, phone/network order limits, and an admin phone blocklist.
+- Pending orders now show a customer-initiated WhatsApp confirmation button with the order number, name, phone and total. The admin desk warns staff to match the incoming WhatsApp number before accepting or preparing the order. This has no per-message API charge because the customer starts the conversation.
+- Optional Cloudflare Turnstile support is implemented with mandatory server-side validation and a short-lived signed human-check cookie. Set `TURNSTILE_SITE_KEY` and `TURNSTILE_SECRET_KEY` in Vercel to enable it; leaving either unset keeps it disabled.
 
 ## Staff workflow for suspicious orders
 
@@ -19,7 +21,7 @@ The network identity on Vercel comes from its platform-provided header; self-hos
 
 ## Still needed / not implemented
 
-1. **Phone ownership verification.** SMS OTP requires an SMS provider, credentials, and a sending budget. Current controls reduce spam but do not prove the person owns their number, and distributed attackers can still evade network limits. A managed CAPTCHA is another optional layer; it is not enabled.
+1. **Automated phone ownership verification.** The free WhatsApp confirmation is a staff-verified workflow. SMS or automated WhatsApp OTP still requires a provider, credentials, and a sending budget. Current controls reduce spam, but only staff matching the incoming WhatsApp number confirms ownership. Turnstile code is ready but remains disabled until free Cloudflare keys are added in Vercel.
 2. **Four fish prices.** Pangasius with rice, pangasius grilled, pangasius tikka, and grilled rahu remain unavailable without priced variants. Restaurant staff must supply those prices.
 3. **Online payments.** Orders currently use cash on delivery/pickup. Easypaisa, JazzCash and card payments are not integrated.
 4. **Automatic opening-hours enforcement.** Hours are display text. Staff must pause delivery/takeaway in Settings when the kitchen stops accepting orders.

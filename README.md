@@ -4,6 +4,8 @@
 
 See [website readiness](docs/READINESS.md) for the slow-connection improvements, order-abuse controls, and remaining launch work. Admin **Order protection** manages confirmed abusive phone numbers. Order limits are shared through PostgreSQL; phone ownership is not yet verified by SMS.
 
+New orders remain pending and give the customer a prepared **Confirm on WhatsApp** message. Staff should match its sender number to the order before accepting it. Optional free Cloudflare Turnstile protection is enabled only when both `TURNSTILE_SITE_KEY` and `TURNSTILE_SECRET_KEY` are configured on the server.
+
 - **Admin → Homepage** controls the default dark/light theme, animation switch, announcement, hero headline, introduction, image URL, menu button label, featured dish count, and visibility of featured dishes, story, and deals. Visitors can save their own theme preference. Motion also respects the device's reduced-motion setting.
 - **Admin → Deals & vouchers** creates, edits, pauses, schedules, or deletes automatic deals and voucher codes. Choose percentage or fixed discounts, minimum food subtotal, optional maximum saving, start/end times, and total redemption limits. Admin dates use the timezone displayed beside the form; they are saved as UTC instants.
 - Automatic deals apply the greatest eligible saving. Entering a voucher replaces the automatic deal; promotions never stack. Savings exclude delivery charges. Delivery minimums use the food subtotal before discounts.

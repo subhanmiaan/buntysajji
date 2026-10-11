@@ -5,6 +5,7 @@ import {createDatabase,createFixture,asRole,adminId} from './database.mjs';
 import {orderSecurity} from '../server/order-security.mjs';
 import {customerPhone} from '../server/validation.mjs';
 import {createApp} from '../server/app.mjs';
+import {turnstile} from '../server/turnstile.mjs';
 
 test('checkout signatures, trusted IP handling and phone normalization',()=>{
  const secret='security-test-secret',guard=orderSecurity({ORDER_SECURITY_SECRET:secret}),fresh=guard.issue();
@@ -14,8 +15,34 @@ test('checkout signatures, trusted IP handling and phone normalization',()=>{
  const req={ip:'127.0.0.1',get:()=> '8.8.8.8'};assert.equal(guard.network(req),guard.network({...req,get:()=> '1.1.1.1'}));
  const deployed=orderSecurity({ORDER_SECURITY_SECRET:secret,VERCEL:'1'});assert.notEqual(deployed.network(req),deployed.network({...req,get:()=> '1.1.1.1'}));
  assert.equal(deployed.network({...req,get:()=> '2001:db8:abcd:1200::1'}),deployed.network({...req,get:()=> '2001:db8:abcd:12ff::2'}));
+ const human=deployed.issueHuman(),tampered=human.slice(0,-1)+(human.endsWith('0')?'1':'0');assert.equal(deployed.verifyHuman(human),true);assert.equal(deployed.verifyHuman(tampered),false);
  for(const number of ['0300 1234567','+92 300 1234567','00923001234567'])assert.equal(customerPhone.parse(number),'923001234567');
  for(const number of ['1234567','00000000000','+15551234567'])assert.equal(customerPhone.safeParse(number).success,false);
+});
+
+test('Turnstile is optional and validates successful order challenges on the server',async()=>{
+ let calls=0;const disabled=turnstile({});await disabled.verify('');assert.equal(disabled.siteKey,null);
+ const good=turnstile({TURNSTILE_SITE_KEY:'public-key',TURNSTILE_SECRET_KEY:'private-key'},{fetcher:async(_url,options)=>{calls++;assert.equal(JSON.parse(options.body).secret,'private-key');return {ok:true,json:async()=>({success:true,action:'order'})};}});
+ assert.equal(good.siteKey,'public-key');await good.verify('customer-token');assert.equal(calls,1);
+ const wrongAction=turnstile({TURNSTILE_SITE_KEY:'public-key',TURNSTILE_SECRET_KEY:'private-key'},{fetcher:async()=>({ok:true,json:async()=>({success:true,action:'login'})})});
+ await assert.rejects(()=>wrongAction.verify('customer-token'),/expired or failed/);
+});
+
+test('enabled Turnstile requires a server-verified human cookie before order creation',async()=>{
+ const secret='turnstile-http-secret';let creates=0;
+ const repository={orderAttempt:async()=>true,createGuardedOrder:async()=>{creates++;return {order_number:'BS-HUMAN'};}};
+ const env={NODE_ENV:'test',ORDER_SECURITY_SECRET:secret,TURNSTILE_SITE_KEY:'public-key',TURNSTILE_SECRET_KEY:'private-key'};let verificationCalls=0;
+ const app=createApp({services:{repository:()=>repository},env,fetcher:async()=>{verificationCalls++;return {ok:true,json:async()=>({success:true,action:'order'})};}}),server=app.listen(0,'127.0.0.1');await new Promise(resolve=>server.once('listening',resolve));
+ const origin='http://127.0.0.1:'+server.address().port,value=(Date.now()-3000)+'.'+'b'.repeat(48),checkout=value+'.'+createHmac('sha256',secret).update('bunty-checkout-v1:'+value).digest('hex');
+ const base={items:[{menu_item_id:randomUUID(),variant_id:randomUUID(),quantity:1,addon_ids:[]}],fulfillment:'takeaway',customer_name:'Human Test',phone:'03001234567',request_key:randomUUID(),tracking_token:'a'.repeat(64),expected_total:500};
+ try{
+  const headers={Origin:origin,'Content-Type':'application/json',Cookie:'bs_checkout='+checkout};
+  assert.equal((await fetch(origin+'/api/orders',{method:'POST',headers,body:JSON.stringify(base)})).status,403);
+  const checked=await fetch(origin+'/api/turnstile-check',{method:'POST',headers,body:JSON.stringify({token:'customer-token'})});assert.equal(checked.status,200);const human=/bs_human=([^;]+)/.exec(checked.headers.get('set-cookie'))?.[1];assert.ok(human);
+  headers.Cookie+='; bs_human='+human;assert.equal((await fetch(origin+'/api/turnstile-check',{method:'POST',headers,body:'{}'})).status,200);assert.equal(verificationCalls,1);
+  const resumed=await fetch(origin+'/api/checkout-session',{headers:{Cookie:'bs_human='+human}});assert.equal((await resumed.json()).human_verified,true);
+  assert.equal((await fetch(origin+'/api/orders',{method:'POST',headers,body:JSON.stringify(base)})).status,201);assert.equal(creates,1);
+ }finally{await new Promise(resolve=>server.close(resolve));}
 });
 
 test('HTTP checkout rejects missing sessions, traps and forged fields before placing an order',async()=>{
