@@ -11,6 +11,7 @@ import {homepageSchema,promotionSchema} from './validation.mjs';
 import {blockedPhoneSchema} from './validation.mjs';
 import {orderSecurity} from './order-security.mjs';
 import {turnstile} from './turnstile.mjs';
+import {recordEvent} from './analytics.mjs';
 import {cartSchema,orderSchema,menuSchema,categorySchema,zoneSchema,settingsSchema,loginSchema,statusSchema,id as idSchema} from './validation.mjs';
 
 const digest=value=>createHash('sha256').update(value).digest('hex');
@@ -26,6 +27,11 @@ export function createApp({services,env=process.env,publicDir=resolve('dist'),fe
  app.use('/api',(req,res,next)=>{res.set('Cache-Control','no-store');if(!['GET','HEAD','OPTIONS'].includes(req.method)){const expected=env.APP_URL?new URL(env.APP_URL).origin:`${req.protocol}://${req.get('host')}`;if(req.get('origin')!==expected)return res.status(403).json({error:'Request origin is not allowed.'});}next();});
  const limit=(max,windowMs)=>rateLimit({windowMs,limit:max,standardHeaders:'draft-8',legacyHeaders:false,message:{error:'Too many requests. Please try again shortly.'}});
  app.get('/api/health',(_req,res)=>res.json({ok:true,configured:Boolean(services)}));
+ app.post('/api/events',limit(60,60000),(req,res)=>{
+  if(req.get('DNT')==='1'||req.get('Sec-GPC')==='1')return res.sendStatus(204);
+  if(!recordEvent(req.body))return res.status(400).json({error:'Invalid analytics event.'});
+  res.sendStatus(204);
+ });
  app.use('/api',(_req,_res,next)=>services?next():next(new AppError('Ordering is not configured. Add the Supabase environment variables and run the database migrations.',503)));
  const repo=()=>services.repository();
  const guard=orderSecurity(env);

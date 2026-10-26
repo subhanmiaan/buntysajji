@@ -1,5 +1,7 @@
 import {runInNewContext} from 'node:vm';
 
+export const initialOrderOptions='<section class="order-options" aria-label="Ways to order"><span class="eyebrow">YOUR FEAST, YOUR WAY</span><div class="order-options-links"><a class="button" href="/menu/?fulfillment=delivery">ORDER DELIVERY ↗</a><a class="button" href="/menu/?fulfillment=takeaway">PICKUP ↗</a><a class="text-link" href="#visit">DINE IN ↗</a><a class="text-link" href="https://wa.me/923353141888?text=Assalam-o-Alaikum%2C%20I%20would%20like%20to%20order%20from%20Bunty%20Sajji." target="_blank" rel="noopener noreferrer">ORDER ON WHATSAPP ↗</a></div><p class="caption">Choose delivery or pickup. Current availability and charges are confirmed at checkout.</p></section>';
+
 export function prerenderPages({app,data,photos}){
  const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const photo=url=>`src="${photos[url]?.src||url}"${photos[url]?.srcset?` srcset="${photos[url].srcset}" sizes="(max-width:680px) 90vw, 33vw"`:''}`;
@@ -14,7 +16,7 @@ export function prerenderPages({app,data,photos}){
  const about=intro('OUR KIND OF GOOD FOOD','ROOTED IN FLAVOUR.<br><em>MADE FOR SHARING.</em>','For the family catch-up, the friends’ feast, and every “bas ek aur bite” in between.')+story.replace(/\$\{photo\("([^"]+)"\)\}/g,(_m,url)=>photo(url));
  const gallery=intro('STRAIGHT FROM THE MENU','TAKE A<br><em>CLOSER LOOK.</em>','Browse all six original menu sheets. Open a sheet to zoom. Live prices and availability are confirmed at checkout.')+`<section class="section gallery-grid">${['Welcome to Bunty سجی','Sajji, fish & BBQ','Kabab, chicken karahi & handi','Beef karahi, tawa & sides','Rolls, burgers, drinks & tandoor','Platters & special deals'].map((title,i)=>`<a class="gallery-card" href="/assets/menu-${i+1}.jpg" target="_blank" rel="noopener"><img src="/assets/menu-${i+1}-preview.webp" alt="${escape(title)} original menu" width="850" height="1200" loading="lazy"><span>${escape(title)} ↗</span></a>`).join('')}</section>`;
  return {
- 'menu/index.html':menu,'about/index.html':about,'gallery/index.html':gallery,
+ 'menu/index.html':menu.replace('<section class="section">',initialOrderOptions+'<section class="section">'),'about/index.html':about,'gallery/index.html':gallery,
  'checkout.html':intro('YOUR Bunty سجی ORDER','CHECKOUT.','Choose delivery or takeaway. Pay cash when your food arrives or when you collect it.')+loading('Your saved bag is safe. Loading current prices and delivery options…'),
  'order.html':intro('YOUR ORDER','ORDER STATUS.','Your private order details will appear here.')+loading('Loading the latest order status…'),
  '404.html':intro('PAGE NOT FOUND','A LITTLE<br><em>OFF THE MENU.</em>','Let’s get you back to the good food.')+'<section class="section"><a class="button" href="/menu/">EXPLORE THE MENU ↗</a></section>'

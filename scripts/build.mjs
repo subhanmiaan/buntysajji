@@ -1,6 +1,6 @@
 import {readFileSync,writeFileSync,mkdirSync,existsSync,cpSync} from 'node:fs';
 import {createHash} from 'node:crypto';
-import {prerenderPages} from './prerender-pages.mjs';
+import {prerenderPages,initialOrderOptions} from './prerender-pages.mjs';
 import sharp from 'sharp';
 const html=readFileSync('index.html','utf8');
 for(const [route,title,description] of [['menu','Our Menu','Explore sajji, karahi, BBQ, platters, burgers and more.'],['about','Our Story','Desi food, good company and a full table. Discover Bunty سجی.'],['gallery','Original Menu Gallery','Browse the supplied Bunty سجی menu sheets and prices.']]){mkdirSync(route,{recursive:true});writeFileSync(route+'/index.html',html.replace(/<title>.*?<\/title>/,`<title>${title} — Bunty سجی</title>`).replace(/<meta name="description" content="[^"]*">/,`<meta name="description" content="${description}">`));}
@@ -27,7 +27,7 @@ for(const [path,body] of Object.entries(initialPages)){
  const page=['checkout.html','order.html'].includes(path)?html:readFileSync('dist/'+path,'utf8');
  writeFileSync('dist/'+path,page.replace(/<main id="main">[\s\S]*?<\/main>/,`<main id="main">${body}</main>`));
 }
-writeFileSync('dist/index.html',html.replace(/<section class="storefront-loading"[\s\S]*?<\/section>/,hero+'<section class="catalog-placeholder" aria-label="Menu loading"><p class="catalog-loading" role="status">Loading today\'s menu… You can explore the menu or call us while it loads.</p><div class="food-grid" aria-hidden="true"><div></div><div></div><div></div></div></section>'));
+writeFileSync('dist/index.html',html.replace(/<section class="storefront-loading"[\s\S]*?<\/section>/,hero+initialOrderOptions+'<section class="catalog-placeholder" aria-label="Menu loading"><p class="catalog-loading" role="status">Loading today\'s menu… You can explore the menu or call us while it loads.</p><div class="food-grid" aria-hidden="true"><div></div><div></div><div></div></div></section>'));
 
 // Keep the tiny theme/shell independent; consolidate the remaining ordered files.
 // Content hashes prevent browsers reusing stale code after a deployment.
@@ -43,3 +43,17 @@ for(const path of ['index.html','shell.html',...Object.keys(initialPages)]){
  writeFileSync('dist/'+path,page);
 }
 console.log('Bundled storefront CSS and JavaScript with content-versioned URLs.');
+
+// Public landing pages get their own canonical and social-preview metadata.
+const origin=new URL(process.env.APP_URL||'https://buntysajji.vercel.app').origin;
+for(const [path,route,label,description] of [
+ ['index.html','/','Bunty Sajji Sialkot — Sajji, BBQ & Karahi','Explore Bunty Sajji at Alam Chowk, Sialkot. Order sajji, BBQ, karahi and platters for delivery or pickup, or contact us on WhatsApp.'],
+ ['menu/index.html','/menu/','Bunty Sajji Menu — Portions & Prices in Sialkot','Browse sajji, BBQ, karahi and sharing platters. Choose portions, see current prices and add-ons, and order delivery or pickup in Sialkot.'],
+ ['about/index.html','/about/','About Bunty Sajji — Alam Chowk, Sialkot','Meet Bunty Sajji in Sialkot. Discover our desi menu and contact the team about your next family meal or group visit.'],
+ ['gallery/index.html','/gallery/','Bunty Sajji Menu Sheets — Sialkot','Browse the original Bunty Sajji menu sheets. Check the live menu for current prices and availability before ordering.']
+]){
+ let page=readFileSync('dist/'+path,'utf8');
+ page=page.replace(/<title>.*?<\/title>/,`<title>${label}</title>`).replace(/<meta name="description" content="[^"]*">/,`<meta name="description" content="${description}">`);
+ page=page.replace('</head>',`<link rel="canonical" href="${origin}${route}"><meta property="og:type" content="website"><meta property="og:title" content="${label}"><meta property="og:description" content="${description}"><meta property="og:url" content="${origin}${route}"><meta property="og:image" content="${origin}/assets/logo-128.webp"><meta name="twitter:card" content="summary"></head>`);
+ writeFileSync('dist/'+path,page);
+}

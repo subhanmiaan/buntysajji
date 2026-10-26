@@ -35,8 +35,14 @@ export const homepageSchema=z.object({
  announcement:text(180).default('Fresh from the fire. Made for your mehfil.'),
  hero_title:text(70).min(1),hero_subtitle:text(220).min(1),hero_image:imageUrl,
  button_label:text(40).min(1),show_deals:z.boolean(),show_story:z.boolean(),show_featured:z.boolean(),
- featured_count:z.number().int().min(3).max(12)
-}).strict();
+ featured_count:z.number().int().min(3).max(12),
+ dining_enabled:z.boolean().default(false),dining_title:text(100).default('Family dining & celebrations'),
+ dining_description:optionalText(1000),dining_capacity:optionalText(100),dining_image:imageUrl.default(''),
+ review_enabled:z.boolean().default(false),review_quote:optionalText(1000),review_author:optionalText(100),review_url:social
+}).strict().superRefine((v,c)=>{
+ if(v.dining_enabled&&(!v.dining_title||!v.dining_description))c.addIssue({code:'custom',message:'Add a title and confirmed details before enabling dining facilities.'});
+ if(v.review_enabled&&(!v.review_quote||!v.review_author||!v.review_url))c.addIssue({code:'custom',message:'A published review needs the genuine quote, customer name and HTTPS source link.'});
+});
 export const promotionSchema=z.object({
  name:text(100).min(1),description:optionalText(400),kind:z.enum(['deal','voucher']),
  code:z.string().trim().toUpperCase().regex(/^[A-Z0-9_-]{3,40}$/).nullable(),
