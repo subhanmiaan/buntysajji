@@ -77,7 +77,7 @@ test('admin dining and genuine review settings persist and render safely',async(
   await page.getByRole('button',{name:'SAVE HOMEPAGE'}).click();await expect(page.locator('#admin-message')).toHaveText('Saved successfully.');
   await page.reload();await expect(page.getByLabel('Dining section title',{exact:true})).toHaveValue('Test family seating');
   await page.goto('/');await expect(page.locator('#dining h2')).toHaveText('Test family seating');await expect(page.locator('#dining')).toContainText('20 guests');await expect(page.locator('.customer-review blockquote')).toContainText('<script>alert(1)</script>');await expect(page.locator('.customer-review script')).toHaveCount(0);await expect(page.locator('.dining-photo')).toHaveAttribute('src','/assets/audit-upload.webp');await expect(page.locator('.hero-dish')).toHaveAttribute('src','/assets/audit-upload.webp');
- }finally{await request.put('/api/admin/homepage',{headers:{Origin:'http://127.0.0.1:3100'},data:original});}
+ }finally{expect((await context.request.put('/api/admin/homepage',{headers:{Origin:'http://127.0.0.1:3100'},data:original})).status()).toBe(200);}
 });
 
 test('analytics accepts only anonymous events and respects browser privacy signals',async({page,request})=>{

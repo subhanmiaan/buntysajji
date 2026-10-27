@@ -27,6 +27,12 @@ window.PublicJourney=(()=>{
   const portion=signature?.variants.filter(v=>v.available).sort((a,b)=>Number(a.price)-Number(b.price))[0];
   if(portion){const price=document.createElement('p');price.className='signature-price';price.textContent=`${signature.name} · ${portion.name} · ${B.money(portion.price)}`;document.querySelector('.hero-buttons')?.before(price);}
   const contacts=document.querySelector('.visit-details');
+  if(catalog){
+   const phone=s.phone||'052 3242 312';
+   document.querySelectorAll('a[href^="tel:"]').forEach(link=>{link.href='tel:'+phone.replace(/[^+0-9]/g,'');if(link.classList.contains('phone-link'))link.textContent=phone;else if(/call/i.test(link.textContent))link.textContent='CALL '+phone+' ↗';});
+   const footer=document.querySelector('.footer-contact');if(footer)footer.textContent=phone+(s.email?' · '+s.email:'');
+   contacts?.querySelectorAll('a[href="https://wa.me/"]').forEach(link=>link.remove());
+  }
   contacts?.querySelectorAll('.whatsapp-badge').forEach((badge,i)=>{badge.textContent=i===0?'WhatsApp orders':'Alternate WhatsApp';});
   const phone=contacts?.querySelector('.phone-link');if(phone){const label=document.createElement('small');label.textContent='Call us · landline';phone.before(label);}
   const visit=document.querySelector('#visit');
