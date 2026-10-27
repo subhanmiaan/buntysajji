@@ -118,3 +118,13 @@ test('a hung catalog stops loading and preserves the saved bag',async({page})=>{
  await expect(page.locator('[data-retry]')).toBeVisible({timeout:12000});await expect(page.locator('#bag-count')).toHaveText('1');await expect(page.locator('#menu-grid .food-card').first()).toBeVisible();
  await page.unroute('**/api/catalog');await page.locator('[data-retry]').click();await expect(page.locator('[data-add]:enabled').first()).toBeVisible();await expect(page.locator('#bag-count')).toHaveText('1');
 });
+
+test('published review has its own section even when dining is not published',async({page})=>{
+ await page.route('**/api/catalog',async route=>{const data=await (await route.fetch()).json();Object.assign(data.settings.homepage,{dining_enabled:false,dining_description:'',review_enabled:true,review_quote:'Highly Recommended',review_author:'Subhan',review_url:'https://example.com/review'});await route.fulfill({json:data});});
+ await page.goto('/#reviews');await expect(page.locator('#reviews h2')).toHaveText('CUSTOMER REVIEWS.');await expect(page.locator('#reviews')).toContainText('Highly Recommended');await expect(page.locator('#reviews h2')).toBeInViewport();
+ expect(await page.locator('#reviews').evaluate(el=>Boolean(el.nextElementSibling?.id==='dining'))).toBe(true);
+ await expect(page.locator('#dining')).toContainText('Planning a family meal');
+ await expect(page.getByRole('link',{name:'DINE IN'})).toHaveAttribute('href','#dining');
+ await expect(page.getByRole('link',{name:'READ REVIEWS'})).toHaveAttribute('href','#reviews');
+ await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});
