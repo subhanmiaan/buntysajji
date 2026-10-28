@@ -54,6 +54,6 @@ for(const [path,route,label,description] of [
 ]){
  let page=readFileSync('dist/'+path,'utf8');
  page=page.replace(/<title>.*?<\/title>/,`<title>${label}</title>`).replace(/<meta name="description" content="[^"]*">/,`<meta name="description" content="${description}">`);
- page=page.replace('</head>',`<link rel="canonical" href="${origin}${route}"><meta property="og:type" content="website"><meta property="og:title" content="${label}"><meta property="og:description" content="${description}"><meta property="og:url" content="${origin}${route}"><meta property="og:image" content="${origin}/assets/logo-128.webp"><meta name="twitter:card" content="summary"></head>`);
+ page=page.replace('</head>',`<link rel="canonical" href="${origin}${route}"><meta property="og:type" content="website"><meta property="og:title" content="${label}"><meta property="og:description" content="${description}"><meta property="og:url" content="${origin}${route}"><meta property="og:image" content="${origin}/assets/bunty-neon-logo.jpg"><meta name="twitter:card" content="summary"></head>`);
  writeFileSync('dist/'+path,page);
 }

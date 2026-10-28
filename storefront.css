@@ -52,3 +52,39 @@ html[lang=ur] body{font-family:Tahoma,Arial,sans-serif}html[lang=ur] h1,html[lan
 [data-theme=dark] :is(.quick-strip span,.discovery-heading>span,.food-bottom strong){color:#ffc467}
 [data-theme=dark] .category-tile small{color:var(--muted)}
 @media(max-width:600px){header{display:grid;grid-template-columns:minmax(0,1fr) auto auto;grid-template-rows:40px 44px;min-height:111px}header .brand{grid-column:1/3;grid-row:1}header .bag{grid-column:3;grid-row:1;margin:0}header .theme-toggle{grid-column:1;grid-row:2;justify-self:start;margin:0}header .language-toggle{grid-column:2;grid-row:2}header .mobile-toggle{grid-column:3;grid-row:2;justify-self:end}header nav{grid-column:1/-1}}
+/* Supplied neon wordmark, displayed without changing the original artwork. */
+.brand img.brand-wordmark{width:220px;height:80px;object-fit:cover;border-radius:8px!important;background:#000!important}
+.admin-page .admin-sidebar .brand img.brand-wordmark{width:180px;height:66px;object-fit:cover}
+.admin-login>img.admin-login-logo{width:220px;height:80px;max-width:100%;object-fit:cover;border-radius:8px}
+.admin-nav-toggle{display:none}
+.admin-main .system-form label,.admin-main .system-form fieldset,.admin-main .option-row>*{min-width:0}
+.admin-notice,.admin-main td{overflow-wrap:anywhere}
+@media(max-width:760px){
+ .admin-page .admin-sidebar{grid-template-columns:minmax(0,1fr) auto}
+ .admin-page .admin-sidebar .brand img.brand-wordmark{width:160px;height:58px}
+ .admin-page .admin-sidebar .admin-nav-toggle{display:block;grid-column:1/-1;grid-row:2;width:100%;min-height:44px;text-align:left;padding:12px}
+ .admin-page .admin-sidebar #logout{grid-column:2;grid-row:1;min-height:44px}
+ .admin-page .admin-sidebar nav{display:none;grid-column:1/-1;grid-row:3;overflow:visible}
+ .admin-page .admin-sidebar.navigation-open nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+ .admin-page .admin-sidebar nav a{white-space:normal;min-height:44px;display:flex;align-items:center;padding:10px}
+ .admin-main .system-form input:not([type=checkbox]):not([type=radio]),.admin-main .system-form select,.admin-main .system-form textarea,.admin-login input{font-size:16px}
+ .admin-main .admin-toolbar>*{min-width:0;max-width:100%}
+ .admin-main .admin-toolbar>input,.admin-main .admin-toolbar>select{width:100%}
+ .admin-main .option-row{grid-template-columns:minmax(0,1fr) 90px}
+ .admin-main .system-form fieldset{margin:0}
+ .admin-main .admin-editor{max-width:100%;padding:14px}
+ .order-dialog{overflow-y:auto;overscroll-behavior:contain}
+}
+@media(max-width:600px){
+ header .brand img.brand-wordmark,html[lang=ur] header .brand img.brand-wordmark{width:140px;height:52px}
+ footer .brand img.brand-wordmark{width:220px;height:80px}
+ .admin-page .admin-table-wrap{overflow:visible}
+ .admin-page .admin-table,.admin-page .admin-table tbody{display:block}
+ .admin-page .admin-table thead{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%)}
+ .admin-page .admin-table tbody tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:14px 0;border:1px solid #ded0b3;border-radius:10px;padding:10px}
+ .admin-page .admin-table tbody td{display:block;border:0;min-width:0;padding:8px}
+ .admin-page .admin-table tbody td:first-child,.admin-page .admin-table tbody td:last-child,.admin-page .admin-table tbody td[colspan]{grid-column:1/-1}
+ .admin-page .admin-table td[data-label]::before{content:attr(data-label);display:block;font-size:11px;font-weight:700;margin-bottom:6px;opacity:.8}
+ .admin-page .admin-table td:last-child button{min-height:44px;margin:3px 8px 3px 0}
+ .admin-page .admin-login{padding:22px}
+}
