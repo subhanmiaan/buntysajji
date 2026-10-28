@@ -52,16 +52,22 @@ html[lang=ur] body{font-family:Tahoma,Arial,sans-serif}html[lang=ur] h1,html[lan
 [data-theme=dark] :is(.quick-strip span,.discovery-heading>span,.food-bottom strong){color:#ffc467}
 [data-theme=dark] .category-tile small{color:var(--muted)}
 @media(max-width:600px){header{display:grid;grid-template-columns:minmax(0,1fr) auto auto;grid-template-rows:40px 44px;min-height:111px}header .brand{grid-column:1/3;grid-row:1}header .bag{grid-column:3;grid-row:1;margin:0}header .theme-toggle{grid-column:1;grid-row:2;justify-self:start;margin:0}header .language-toggle{grid-column:2;grid-row:2}header .mobile-toggle{grid-column:3;grid-row:2;justify-self:end}header nav{grid-column:1/-1}}
-/* Supplied neon wordmark, displayed without changing the original artwork. */
-.brand img.brand-wordmark{width:220px;height:80px;object-fit:cover;border-radius:8px!important;background:#000!important}
-.admin-page .admin-sidebar .brand img.brand-wordmark{width:180px;height:66px;object-fit:cover}
-.admin-login>img.admin-login-logo{width:220px;height:80px;max-width:100%;object-fit:cover;border-radius:8px}
+/* Transparent emblem on the left, neon lettering on the right. */
+.brand{direction:ltr;align-items:center;gap:10px}
+.brand img.brand-emblem{width:60px;height:66px;object-fit:contain;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
+.brand img.brand-wordmark{width:190px;height:auto;object-fit:contain;border-radius:0!important;background:transparent!important}
+.admin-page .admin-sidebar .brand{gap:6px}
+.admin-page .admin-sidebar .brand img.brand-emblem{width:44px;height:49px}
+.admin-login .admin-login-brand{justify-content:flex-start;gap:8px}
+.admin-login .admin-login-brand .brand-emblem{width:48px;height:53px}
+.admin-login .admin-login-brand .brand-wordmark{width:160px;height:auto}
+.admin-page .admin-sidebar .brand img.brand-wordmark{width:128px;height:auto;object-fit:contain}
 .admin-nav-toggle{display:none}
 .admin-main .system-form label,.admin-main .system-form fieldset,.admin-main .option-row>*{min-width:0}
 .admin-notice,.admin-main td{overflow-wrap:anywhere}
 @media(max-width:760px){
  .admin-page .admin-sidebar{grid-template-columns:minmax(0,1fr) auto}
- .admin-page .admin-sidebar .brand img.brand-wordmark{width:160px;height:58px}
+ .admin-page .admin-sidebar .brand img.brand-wordmark{width:128px;height:auto}
  .admin-page .admin-sidebar .admin-nav-toggle{display:block;grid-column:1/-1;grid-row:2;width:100%;min-height:44px;text-align:left;padding:12px}
  .admin-page .admin-sidebar #logout{grid-column:2;grid-row:1;min-height:44px}
  .admin-page .admin-sidebar nav{display:none;grid-column:1/-1;grid-row:3;overflow:visible}
@@ -76,8 +82,12 @@ html[lang=ur] body{font-family:Tahoma,Arial,sans-serif}html[lang=ur] h1,html[lan
  .order-dialog{overflow-y:auto;overscroll-behavior:contain}
 }
 @media(max-width:600px){
- header .brand img.brand-wordmark,html[lang=ur] header .brand img.brand-wordmark{width:140px;height:52px}
- footer .brand img.brand-wordmark{width:220px;height:80px}
+ header{grid-template-rows:54px 44px}
+ header .brand{gap:7px}
+ header .brand img.brand-emblem{width:44px;height:49px}
+ header .brand img.brand-wordmark,html[lang=ur] header .brand img.brand-wordmark{width:148px;height:auto}
+ footer .brand img.brand-emblem{width:52px;height:58px}
+ footer .brand img.brand-wordmark{width:200px;height:auto}
  .admin-page .admin-table-wrap{overflow:visible}
  .admin-page .admin-table,.admin-page .admin-table tbody{display:block}
  .admin-page .admin-table thead{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%)}
