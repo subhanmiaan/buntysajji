@@ -85,3 +85,13 @@ test('cart works in memory when browser storage is unavailable',async({page})=>{
  await page.addInitScript(()=>{Storage.prototype.getItem=()=>{throw new Error('Storage unavailable');};Storage.prototype.setItem=()=>{throw new Error('Storage unavailable');};});
  const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/menu/');await page.locator('#search').fill('Test Sajji');await page.locator('#menu-grid [data-add]').click();await page.locator('[data-bag]').click();await expect(page.locator('#bag-content')).toContainText('Test Sajji');await expect(page.locator('#bag-count')).toHaveText('1');expect(errors).toEqual([]);
 });
+test('menu details show full descriptions, portion prices and dish-specific enquiries',async({page})=>{
+ const description='A detailed kitchen description. '.repeat(8)+'\nIncluded sides: confirmed details. <script>alert(1)</script>';
+ await page.route('**/api/catalog',async route=>{const data=await(await route.fetch()).json();data.items.find(i=>i.name==='Test Sajji').description=description;await route.fulfill({json:data});});
+ await page.goto('/menu/');await page.locator('#search').fill('Test Sajji');const card=page.locator('#menu-grid .food-card');
+ await card.locator('.dish-details summary').click();await expect(card.locator('.dish-description')).toHaveText(description);await expect(card.locator('.dish-portions')).toContainText('500');await expect(card.locator('.dish-portions')).toContainText('900');await expect(card.locator('.dish-details script')).toHaveCount(0);
+ expect(new URL(await card.locator('.dish-enquiry').getAttribute('href')).searchParams.get('text')).toContain('Test Sajji');
+ await page.setViewportSize({width:320,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ await page.locator('[data-language-toggle]').click();await expect(card.locator('.dish-details summary')).toHaveText('کھانے کی تفصیل اور مقدار کی قیمتیں');
+ await card.locator('[data-add]').click();await expect(page.locator('#bag-count')).toHaveText('1');
+});

@@ -98,3 +98,16 @@ html[lang=ur] body{font-family:Tahoma,Arial,sans-serif}html[lang=ur] h1,html[lan
  .admin-page .admin-table td:last-child button{min-height:44px;margin:3px 8px 3px 0}
  .admin-page .admin-login{padding:22px}
 }
+.food-info .dish-summary{min-height:0;line-height:1.65;overflow-wrap:anywhere}
+.food-info .dish-options{font-size:12px;line-height:1.6;margin:0 0 14px;color:var(--muted)}
+.dish-options span{font-weight:700}
+.dish-details{border-block:1px solid var(--line);margin:0 0 18px}
+.dish-details summary{cursor:pointer;min-height:48px;padding:14px 0;font-size:13px;font-weight:700;color:var(--text);list-style:revert}
+.dish-details-body{padding:0 0 16px}
+.food-info .dish-description{white-space:pre-line;overflow-wrap:anywhere;line-height:1.7;min-height:0}
+.dish-details h4{font:700 13px Arial,sans-serif;margin:14px 0 8px;color:var(--text)}
+.dish-portions{margin:0 0 12px;font-size:13px}
+.dish-portions>div{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line)}
+.dish-portions dt{min-width:0;overflow-wrap:anywhere}.dish-portions dd{margin:0;white-space:nowrap;font-weight:700}
+.food-info .dish-availability{font-size:12px;min-height:0;margin:12px 0}
+.dish-enquiry{display:inline-block;font-size:12px;padding:12px 0;min-height:44px}
