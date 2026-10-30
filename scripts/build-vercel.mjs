@@ -7,3 +7,8 @@ for(const file of ['assets','client','app.js','menu-data.js','style.css','enhanc
  cpSync(`dist/${file}`,`public/${file}`,{recursive:true});
 }
 console.log('Vercel public assets ready; pages and API are served by Express.');
+// One-time owner-approved production data import; removed after verification.
+if(process.env.VERCEL_ENV==='production'){
+ const {execFileSync}=await import('node:child_process');
+ execFileSync(process.execPath,['scripts/import-delivery-locations.mjs','--apply'],{stdio:'inherit'});
+}
