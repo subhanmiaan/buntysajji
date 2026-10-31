@@ -111,3 +111,7 @@ html[lang=ur] body{font-family:Tahoma,Arial,sans-serif}html[lang=ur] h1,html[lan
 .dish-portions dt{min-width:0;overflow-wrap:anywhere}.dish-portions dd{margin:0;white-space:nowrap;font-weight:700}
 .food-info .dish-availability{font-size:12px;min-height:0;margin:12px 0}
 .dish-enquiry{display:inline-block;font-size:12px;padding:12px 0;min-height:44px}
+.area-search-label{display:grid;gap:8px;max-width:460px;font-size:14px;font-weight:700;margin:20px 0}
+.area-search-label input{width:100%;min-height:48px;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--text);font:inherit;font-size:16px}
+#coverage-list{max-height:440px;overflow-y:auto;overscroll-behavior:contain;padding:4px;scrollbar-gutter:stable}
+.filter-reset{min-height:44px;padding:10px 16px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--text);font:inherit;font-size:13px;cursor:pointer}

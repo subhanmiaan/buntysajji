@@ -14,7 +14,8 @@
     "test:audit": "npm run build && playwright test --config=playwright.audit.config.mjs",
     "admin:create": "node scripts/create-admin.mjs",
     "seed:generate": "node scripts/generate-seed.mjs",
-    "package": "node scripts/package-site.mjs"
+    "package": "node scripts/package-site.mjs",
+    "test:stress": "npm run build && node tests/stress-audit.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "2.117.2",
